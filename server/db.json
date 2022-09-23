@@ -1,0 +1,39 @@
+{
+  "stores": [
+    {
+      "id": 1,
+      "storeName": "Mass",
+      "name": "Josue",
+      "lastName": "Vilchez",
+      "email": "j.vil@gmail.com",
+      "password": "santamaria2",
+      "phone": "987883514",
+      "address": "Calle Bolivar 257"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": 1,
+      "supplierName": "Bebidas San Joel SA",
+      "name": "Pedro",
+      "lastName": "Lam",
+      "email": "pedro_22@gmail.com",
+      "category": "Food and Beverage",
+      "password": "sanjoel.40",
+      "ruc": "78903567651",
+      "description": "Bebidas San Joel SA is a Peruvian company that owns several supermarket chains. It began operations in 2004",
+      "phone": "906774532",
+      "address": "Calle Vicente del Campo 308"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Gaseosa Cola Imperial",
+      "supplierId": 1,
+      "category": "Food and Beverage",
+      "available": true,
+      "description": "Orange flavor soda (500 ml)"
+    }
+  ]
+}
