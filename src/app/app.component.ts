@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'urprovider-webapp';
   options = [
+    {path:'',title:'Home'},
+    {path: '/searchlist',title: 'searchlist'}
 
   ]
 }
