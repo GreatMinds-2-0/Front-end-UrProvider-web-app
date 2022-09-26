@@ -1,0 +1,11 @@
+#app{
+  background: #DCE4FC;
+  color: black;
+  border-bottom: black solid 3px;
+}
+.mat-spacer {
+  flex: 1 1 auto;
+}
+body{
+  background-color: #DCE4FC;
+}
