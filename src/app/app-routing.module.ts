@@ -7,8 +7,8 @@ import {
 } from "./business/pages/store/store-supplier-profile/store-supplier-profile.component";
 
 const routes: Routes = [
-  {path:'home', component: StoreHomeComponent},
-  {path:'SSProfile', component: StoreSupplierProfileComponent}
+  {path:"home", component: StoreHomeComponent},
+  {path:"SSProfile", component: StoreSupplierProfileComponent}
 ]
 
 @NgModule({

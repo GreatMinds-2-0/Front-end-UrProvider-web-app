@@ -10,6 +10,7 @@
       "phone": "987883514",
       "address": "Calle Bolivar 257"
     }
+
   ],
   "suppliers": [
     {
@@ -17,6 +18,19 @@
       "supplierName": "Bebidas San Joel SA",
       "name": "Pedro",
       "lastName": "Lam",
+      "email": "pedro_22@gmail.com",
+      "category": "Food and Beverage",
+      "password": "sanjoel.40",
+      "ruc": "78903567651",
+      "description": "Bebidas San Joel SA is a Peruvian company that owns several supermarket chains. It began operations in 2004",
+      "phone": "906774532",
+      "address": "Calle Vicente del Campo 308"
+    },
+    {
+      "id": 2,
+      "supplierName": "Sangucheria",
+      "name": "Don",
+      "lastName": "Jose",
       "email": "pedro_22@gmail.com",
       "category": "Food and Beverage",
       "password": "sanjoel.40",
