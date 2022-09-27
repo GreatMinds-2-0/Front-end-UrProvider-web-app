@@ -1,36 +1,26 @@
 <mat-card class="homecard">
   <mat-card-content>
     <h1>Hello {{ supplierData.name }} {{ supplierData.lastName }}</h1>
+    <p>We are happy to continue working with you <b>{{ supplierData.supplierName }}</b></p>
   </mat-card-content>
 </mat-card>
 
 <mat-grid-list cols="2" rowHeight="2:1">
   <mat-grid-tile>
-
-    <h1>My Clients</h1>
-    <table>
-      <tr class="trtop">
-        <td>Store Name</td>
-        <td>Name</td>
-        <td>Last Name</td>
-      </tr>
-      <tr>
-        <td>Mass</td>
-        <td>Richard</td>
-        <td>Horta</td>
-      </tr>
-      <tr>
-        <td>Great Guitars</td>
-        <td>Joel</td>
-        <td>Lampe</td>
-      </tr>
-      <tr>
-        <td>Good Items</td>
-        <td>Danny</td>
-        <td>Teon</td>
-      </tr>
-    </table>
-
+    <div>
+      <h1 class="text-center">My Clients</h1>
+      <mat-card *ngFor="let store of stores" class="store-card">
+        <mat-card-title-group>
+          <mat-card-title>{{ store.storeName }}</mat-card-title>
+          <mat-card-subtitle>{{ store.name }} {{ store.lastName }}</mat-card-subtitle>
+          <img mat-card-sm-image [src]="store.image">
+        </mat-card-title-group>
+      </mat-card>
+    </div>
   </mat-grid-tile>
-  <mat-grid-tile>Orders</mat-grid-tile>
+  <mat-grid-tile>
+    <div>
+      <h1 class="text-center">Orders</h1>
+    </div>
+  </mat-grid-tile>
 </mat-grid-list>
