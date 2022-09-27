@@ -1,4 +1,9 @@
 <mat-toolbar *ngIf="profile === 'supplier'" class="navbarc">
+  <div class="example-button-container">
+    <button mat-mini-fab class="back-button" aria-label="Back icon button">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
   <h1>UrProvider |</h1>
   <h3>| Suppliers</h3>
   <div class="mat-spacer"></div>
@@ -7,13 +12,20 @@
 </mat-toolbar>
 
 <mat-toolbar *ngIf="profile === 'store'" class="navbarc">
+  <div class="example-button-container">
+    <button mat-mini-fab class="back-button" aria-label="Back icon button">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
   <h1>UrProvider |</h1>
   <h3>| Stores</h3>
-  <mat-form-field appearance="fill">
-    <mat-label>Search products and suppliers</mat-label>
-    <input matInput [(ngModel)]="searchTerm"/>
-    <mat-icon matPrefix>search</mat-icon>
-  </mat-form-field>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Search products and suppliers</mat-label>
+      <input matInput [(ngModel)]="searchTerm"/>
+      <mat-icon matPrefix>search</mat-icon>
+    </mat-form-field>
+  </div>
   <div class="mat-spacer"></div>
   <a mat-button *ngFor="let option of options2"
      [routerLink]="option.path">{{ option.title }}</a>
