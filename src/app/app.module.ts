@@ -9,6 +9,7 @@ import {SignInComponent} from './security/pages/sign-in/sign-in.component';
 import {SignUpComponent} from './security/pages/sign-up/sign-up.component';
 import {StoreHomeComponent} from './store/pages/store-home/store-home.component';
 import {SupplierHomeComponent} from './supplier/pages/supplier-home/supplier-home.component';
+import { SupplierProfileComponent } from './supplier/pages/supplier-profile/supplier-profile.component';
 
 
 
@@ -20,6 +21,7 @@ import {SupplierHomeComponent} from './supplier/pages/supplier-home/supplier-hom
     SignUpComponent,
     StoreHomeComponent,
     SupplierHomeComponent,
+    SupplierProfileComponent,
 
   ],
   imports: [
