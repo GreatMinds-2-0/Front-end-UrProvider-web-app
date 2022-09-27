@@ -6,6 +6,11 @@
 .mat-spacer {
   flex: 1 1 auto;
 }
-body{
-  background-color: #DCE4FC;
+.slogan {
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  transform: translate(-40%, -20%);
+  font-family: "Bebas Neue", cursive;
+  font-size: 4vw;
 }

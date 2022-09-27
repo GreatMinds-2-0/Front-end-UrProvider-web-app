@@ -38,10 +38,10 @@ export class StoreSupplierProfileComponent implements OnInit {
     }
   ];
   id:any;
-  supplierData: Supplier;
+  supplierDatas: Supplier;
   constructor(private suppliersService: SuppliersService,
               private route: ActivatedRoute) {
-    this.supplierData = {} as Supplier;
+    this.supplierDatas = {} as Supplier;
   }
 
   ngOnInit(): void {
@@ -51,7 +51,7 @@ export class StoreSupplierProfileComponent implements OnInit {
 
     getSupplierById(id: number) {
       this.suppliersService.getById(id).subscribe((response:any) => {
-        this.supplierData = response;
+        this.supplierDatas = response;
       })
     }
 

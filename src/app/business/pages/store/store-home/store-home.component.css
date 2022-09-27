@@ -1,7 +1,26 @@
 .mat-card img {
+  display: flex;
   object-fit: cover;
-  height: 180px;
-  width: 180px;
+  height: 140px;
+  width: 160px;
+  margin-left: 20px;
+}
+.container{
+  display: inline-block;
+  text-align: left;
+  height: auto;
+}
+img {
+  object-fit: none;
+  width: 99vw;
+  height: 300px;
+}
+mat-card{
+  border: black solid 3px;
+
+}
+mat-card-header{
+  border: black solid 3px;
 }
 .example-card {
   color: black;
@@ -35,6 +54,7 @@
   gap: 30px;
 
 }
+
 .game-name {
   font-size: 1rem;
   color: black;
