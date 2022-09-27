@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { SupplierHomeComponent } from './business/pages/supplier/supplier-home/supplier-home.component';
+
 import { AppRoutingModule } from './app-routing.module';
+import { InventoryComponent } from './inventory/pages/inventory.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SupplierHomeComponent
+    InventoryComponent
   ],
   imports: [
     BrowserModule,
