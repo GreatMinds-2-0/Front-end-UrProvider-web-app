@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'urprovider-webapp';
+
   options = [
     {path:'/home',title:'Home'},
-    {path: '/SSProfile',title: 'SSProfile'}
+    {path: '/ssprofile',title: 'SSProfile'}
   ]
 }
