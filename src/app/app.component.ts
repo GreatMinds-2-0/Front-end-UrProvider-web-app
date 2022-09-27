@@ -10,6 +10,5 @@ export class AppComponent {
 
   options = [
     {path:'/home',title:'Home'},
-    {path: '/ssprofile',title: 'SSProfile'}
   ]
 }

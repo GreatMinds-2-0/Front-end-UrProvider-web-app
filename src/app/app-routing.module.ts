@@ -8,7 +8,7 @@ import {
 
 const routes: Routes = [
   {path:"home", component: StoreHomeComponent},
-  {path:"ssprofile", component: StoreSupplierProfileComponent}
+  {path:"ssprofile/:id", component: StoreSupplierProfileComponent}
 ]
 
 @NgModule({

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Supplier} from "../../../model/supplier";
+import {SuppliersService} from "../../../services/suppliers.service";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-store-supplier-profile',
@@ -34,10 +37,25 @@ export class StoreSupplierProfileComponent implements OnInit {
       class: 'star-gray star-hover star'
     }
   ];
-  constructor() { }
+  id:any;
+  supplierData: Supplier;
+  constructor(private suppliersService: SuppliersService,
+              private route: ActivatedRoute) {
+    this.supplierData = {} as Supplier;
+  }
 
   ngOnInit(): void {
+    this.id = this.route.snapshot.paramMap.get("id");
+    this.getSupplierById(Number(this.id));
   }
+
+    getSupplierById(id: number) {
+      this.suppliersService.getById(id).subscribe((response:any) => {
+        this.supplierData = response;
+      })
+    }
+
+
   selectStar(value: number): void{
 
     // prevent multiple selection
