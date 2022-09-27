@@ -1,0 +1,34 @@
+.homecard {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(10, 86, 140, 0.5) 0%,
+  rgba(10, 86, 140, 0.5) 100%), url(src/assets/img/cajas.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+.trtop {
+  background-color: #ababab;
+}
+
+mat-grid-tile {
+  background: #DCE4FC;
+}
+
+.text-center {
+  text-align: center !important;
+}

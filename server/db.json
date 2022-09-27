@@ -24,16 +24,48 @@
       "description": "Bebidas San Joel SA is a Peruvian company that owns several supermarket chains. It began operations in 2004",
       "phone": "906774532",
       "address": "Calle Vicente del Campo 308"
+    },
+    {
+      "id": 2,
+      "supplierName": "Good Items SA",
+      "name": "Alonso",
+      "lastName": "Kamp",
+      "email": "alkamp@gmail.com",
+      "category": "Technology",
+      "password": "kamptec1",
+      "ruc": "06789352314",
+      "description": "Good Items SA is a Peruvian company that sells multiple technolgy products. It began operations in 2004",
+      "phone": "976067993",
+      "address": "Calle Los Portales 876"
     }
   ],
   "products": [
     {
       "id": 1,
+      "name": "Bebida Chicha Morada",
+      "supplierId": 1,
+      "category": "Food and Beverage",
+      "image": "https://s3.amazonaws.com/bsalemarket/39452/product/AGU390CHIdefault.jpg",
+      "available": true,
+      "description": "Purple corn drink (550 ml)"
+    },
+    {
+      "id": 2,
       "name": "Gaseosa Cola Imperial",
       "supplierId": 1,
       "category": "Food and Beverage",
+      "image": "https://transmarket.pe/wp-content/uploads/2020/06/KR-NARANJA-1700-ML.jpg",
       "available": true,
-      "description": "Orange flavor soda (500 ml)"
+      "description": "Orange flavoured soda (500 ml)"
+    },
+    {
+      "id": 3,
+      "name": "JBL Speaker",
+      "supplierId": 2,
+      "category": "Technology",
+      "image": "https://www.tradeinn.com/f/13737/137378886/jbl-flip-5-wireless-bluetooth-speaker.jpg",
+      "available": true,
+      "description": "Wireless bluetooth JBL speaker"
     }
   ]
 }
