@@ -8,7 +8,8 @@ import {
 
 const routes: Routes = [
   {path:"home", component: StoreHomeComponent},
-  {path:"ssprofile/:id", component: StoreSupplierProfileComponent}
+  {path:"home/ssprofile/:id", component: StoreSupplierProfileComponent},
+  {path:"", redirectTo:"home",pathMatch:"full"}
 ]
 
 @NgModule({

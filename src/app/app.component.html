@@ -1,6 +1,6 @@
 <body>
 <mat-toolbar color="primary" id="app">
-  <h1> UrProvider</h1>
+  <a (click)="navigateToHome()"><h1> UrProvider</h1></a>
   <div class="mat-spacer"></div>
   <a mat-button *ngFor="let option of options"
      [routerLink]="option.path">{{ option.title }}</a>

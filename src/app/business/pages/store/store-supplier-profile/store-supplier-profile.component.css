@@ -1,5 +1,6 @@
 .image-provider {
   max-width: 300px;
+
 }
 
 .example-header-image {
@@ -36,6 +37,9 @@
   position: relative;
   width: 100%;
 
+}
+.container1 img{
+  border: black solid 3px;
 }
 .side {
   width: 50%;
