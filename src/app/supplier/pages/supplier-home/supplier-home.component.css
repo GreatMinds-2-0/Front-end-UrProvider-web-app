@@ -9,6 +9,20 @@
   background-size: cover;
 }
 
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.product-card {
+  max-width: 400px;
+  background-color: #457B9D;
+  color: black;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -29,11 +43,7 @@ mat-grid-tile {
   background: #DCE4FC;
 }
 
-.text-center {
-  text-align: center !important;
-}
-
-.store-card {
-  max-width: 400px;
-  margin-bottom: 8px;
+.header {
+  text-align: center;
+  margin-top: 50px;
 }

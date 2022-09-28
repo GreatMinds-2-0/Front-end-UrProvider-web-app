@@ -10,6 +10,7 @@
 
 .container2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -19,3 +20,15 @@
   text-align: center;
   margin-top: 50px;
 }
+
+.but {
+  margin-top: 50px;
+  color: white;
+  background-color: #3F51B5;
+}
+
+.img-products {
+  height: 300px;
+  object-fit: cover;
+}
+

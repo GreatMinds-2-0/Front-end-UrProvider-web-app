@@ -33,7 +33,7 @@ export class StoreHomeComponent implements OnInit {
     })
   }
 
-  getStoreById(id:Number){
+  getStoreById(id: number){
     this.storesService.getById(id).subscribe((response:any)=>{
       this.storeData=response;
     })

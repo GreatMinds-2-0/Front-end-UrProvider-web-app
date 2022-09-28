@@ -38,7 +38,7 @@
     {
       "supplierName": "San Joel Drinks Company",
       "name": "Diego",
-      "lastName": "Lam",
+      "lastName": "Calo",
       "image": "https://www.portafolio.co/files/article_multimedia/uploads/2021/09/04/613390daa6fce.jpeg",
       "email": "diego.40@gmail.com",
       "address": "Street Vicente del Campo 308",
@@ -66,22 +66,20 @@
   ],
   "products": [
     {
-      "id": 1,
       "name": "Chicha Morada Drink",
-      "supplierId": 1,
       "category": "Food and Beverage",
       "image": "https://s3.amazonaws.com/bsalemarket/39452/product/AGU390CHIdefault.jpg",
       "available": true,
-      "description": "Purple corn drink (550 ml)"
+      "description": "Purple corn drink (600 ml)",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Cola Imperial Soda",
-      "supplierId": 1,
+      "name": "Cola KR Soda",
       "category": "Food and Beverage",
       "image": "https://transmarket.pe/wp-content/uploads/2020/06/KR-NARANJA-1700-ML.jpg",
       "available": true,
-      "description": "Orange flavoured soda (500 ml)"
+      "description": "Orange flavoured soda (600 ml)",
+      "id": 2
     },
     {
       "id": 3,
@@ -91,6 +89,15 @@
       "image": "https://www.tradeinn.com/f/13737/137378886/jbl-flip-5-wireless-bluetooth-speaker.jpg",
       "available": true,
       "description": "Wireless bluetooth JBL speaker"
+    },
+    {
+      "name": "Dron XTX",
+      "category": "Technology",
+      "image": "https://cdn.pocket-lint.com/r/s/x1920/assets/images/130265-drones-news-buyer-s-guide-best-drones-image22-r2dkig0qul.jpg",
+      "available": true,
+      "description": "Cool flying robot ",
+      "supplierId": "1",
+      "id": 4
     }
   ]
 }

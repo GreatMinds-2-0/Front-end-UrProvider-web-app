@@ -11,13 +11,10 @@ import {SuppliersService} from "../../services/suppliers.service";
 })
 export class SupplierEditProfileComponent implements OnInit {
   id?:any;
-  asd?:any;
-  updateSupplierData: Supplier;
   profilesData: Supplier;
 
   constructor(private supplierService: SuppliersService, private route: ActivatedRoute) {
     this.profilesData = {} as Supplier;
-    this.updateSupplierData = {} as Supplier;
   }
 
   ngOnInit(): void {
@@ -27,8 +24,6 @@ export class SupplierEditProfileComponent implements OnInit {
 
   getData(id: number) {
     this.route.params.subscribe(() => this.supplierService.getById(id).subscribe((retrievedPost) => {
-
-      this.asd = retrievedPost.id,
         this.profilesData.supplierName = retrievedPost.supplierName,
         this.profilesData.name = retrievedPost.name,
         this.profilesData.lastName = retrievedPost.lastName,
@@ -41,7 +36,6 @@ export class SupplierEditProfileComponent implements OnInit {
         this.profilesData.phone = retrievedPost.phone,
         this.profilesData.category = retrievedPost.category
     }));
-
   }
 
   updateProfile() {

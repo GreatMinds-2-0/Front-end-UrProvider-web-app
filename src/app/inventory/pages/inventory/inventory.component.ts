@@ -35,5 +35,4 @@ export class InventoryComponent implements OnInit {
     });
     console.log(this.products);
   }
-
 }

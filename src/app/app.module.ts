@@ -28,6 +28,10 @@ import {SuppliersService} from "./supplier/services/suppliers.service";
 import { SupplierEditProfileComponent } from './supplier/pages/supplier-edit-profile/supplier-edit-profile.component';
 import { StoreSupplierProfileComponent } from './store/pages/store-supplier-profile/store-supplier-profile.component';
 import { EditProductComponent } from './inventory/pages/edit-product/edit-product.component';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import { AddProductComponent } from './inventory/pages/add-product/add-product.component';
+import {StoresService} from "./store/services/stores.service";
+import {ProductsService} from "./inventory/services/products.service";
 
 
 
@@ -43,6 +47,7 @@ import { EditProductComponent } from './inventory/pages/edit-product/edit-produc
     SupplierEditProfileComponent,
     StoreSupplierProfileComponent,
     EditProductComponent,
+    AddProductComponent,
 
   ],
   imports: [
@@ -62,9 +67,10 @@ import { EditProductComponent } from './inventory/pages/edit-product/edit-produc
     MatSortModule,
     MatCardModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatSlideToggleModule
   ],
-  providers: [SuppliersService],
+  providers: [SuppliersService, StoresService, ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
