@@ -1,1 +1,44 @@
-<p>supplier-profile works!</p>
+<div class="mm">
+  <div class="supplier-form">
+    <form>
+      <h1 class="title">Supplier</h1>
+      <br>
+      <mat-icon class="icon-display" inline=true>account_circle</mat-icon>
+      <br>
+      <div class="content">
+        <b>Supplier Name: </b> {{supplierData.supplierName}}
+      </div>
+      <div class="content">
+        <b>Name: </b> {{supplierData.name}}
+      </div>
+      <div class="content">
+        <b>Last Name: </b> {{supplierData.lastName}}
+      </div>
+      <div class="content">
+        <b>Email: </b> {{supplierData.email}}
+      </div>
+      <div class="content">
+        <b>Address: </b> {{supplierData.address}}
+      </div>
+      <div class="content">
+        <b>Password: </b> {{supplierData.password}}
+      </div>
+      <div class="content">
+        <b>RUC: </b> {{supplierData.ruc}}
+      </div>
+      <div class="content">
+        <b>Category: </b> {{supplierData.category}}
+      </div>
+      <div class="content">
+        <b>Description: </b> {{supplierData.description}}
+      </div>
+      <div class="content">
+        <b>Phone: </b> {{supplierData.phone}}
+      </div>
+      <div mat-dialog-actions align="center">
+        <button mat-raised-button color="primary" [routerLink]= "['/supplier-profile-edit',supplierData.id]">Edit Profile</button>
+      </div>
+      <br>
+    </form>
+  </div>
+</div>

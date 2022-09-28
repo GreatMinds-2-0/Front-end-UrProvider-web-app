@@ -25,6 +25,7 @@ import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatDividerModule} from "@angular/material/divider";
 import {SuppliersService} from "./supplier/services/suppliers.service";
+import { SupplierEditProfileComponent } from './supplier/pages/supplier-edit-profile/supplier-edit-profile.component';
 
 
 
@@ -37,6 +38,7 @@ import {SuppliersService} from "./supplier/services/suppliers.service";
     StoreHomeComponent,
     SupplierHomeComponent,
     SupplierProfileComponent,
+    SupplierEditProfileComponent,
 
   ],
   imports: [

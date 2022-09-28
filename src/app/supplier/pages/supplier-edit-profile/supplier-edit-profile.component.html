@@ -1,0 +1,48 @@
+<div class="mm">
+  <div class="supplier-form">
+    <form>
+      <h1 class="title">Store</h1>
+      <br>
+      <mat-icon class="icon-display" inline=true>account_circle</mat-icon>
+      <br>
+      <div class="content">
+        <b>Supplier Name: </b> <input style="border-radius: 10px" type="text" name="supplierName" [(ngModel)]="profilesData.supplierName" class="form-control mb-3">
+      </div>
+      <br>
+      <div class="content">
+        <b>Name: </b> <input style="border-radius: 10px" type="text" name="name"[(ngModel)]="profilesData.name" class="form-control mb-3">
+      </div>
+      <br>
+      <div class="content">
+        <b>Last Name: </b> <input style="border-radius: 10px" type="text" name="last_name"[(ngModel)]="profilesData.lastName" class="form-control mb-3">
+      </div>
+      <br>
+      <div class="content">
+        <b>Email: </b> <input style="border-radius: 10px" type="text" name="email"[(ngModel)]="profilesData.email" class="form-control mb-3">
+      </div>
+      <br>
+      <div class="content">
+        <b>Address: </b> <input style="border-radius: 10px" type="text" name="address"[(ngModel)]="profilesData.address" class="form-control mb-3">
+      </div>
+      <div class="content">
+        <b>Password: </b> <input style="border-radius: 10px" type="text" name="password"[(ngModel)]="profilesData.password" class="form-control mb-3">
+      </div>
+      <div class="content">
+        <b>RUC: </b> <input style="border-radius: 10px" type="text" name="ruc"[(ngModel)]="profilesData.ruc" class="form-control mb-3">
+      </div>
+      <div class="content">
+        <b>Category: </b> <input style="border-radius: 10px" type="text" name="category"[(ngModel)]="profilesData.category" class="form-control mb-3">
+      </div>
+      <div class="content">
+        <b>Description: </b> <input style="border-radius: 10px" type="text" name="description"[(ngModel)]="profilesData.description" class="form-control mb-3">
+      </div>
+      <div class="content">
+        <b>Phone: </b> <input style="border-radius: 10px" type="text" name="phone"[(ngModel)]="profilesData.phone" class="form-control mb-3">
+      </div>
+      <div mat-dialog-actions align="center">
+        <button mat-raised-button color="primary" (click)="updateProfile()" [routerLink]= "['/supplier-profile',id]">Save</button>
+      </div>
+      <br>
+    </form>
+  </div>
+</div>

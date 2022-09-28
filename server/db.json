@@ -36,17 +36,17 @@
   ],
   "suppliers": [
     {
-      "id": 1,
       "supplierName": "San Joel Drinks Company",
-      "name": "Pedro",
+      "name": "Diego",
       "lastName": "Lam",
-      "email": "pedro_22@gmail.com",
+      "email": "diego.40@gmail.com",
+      "address": "Street Vicente del Campo 308",
+      "ruc": "7536345344",
       "category": "Food and Beverage",
-      "password": "sanjoel.40",
-      "ruc": "78903567651",
       "description": "San Joel Drinks Company is a Peruvian company that owns several supermarket chains. It began operations in 2004",
-      "phone": "906774532",
-      "address": "Street Vicente del Campo 308"
+      "phone": "93132881233",
+      "password": "diego.10000",
+      "id": 1
     },
     {
       "id": 2,
