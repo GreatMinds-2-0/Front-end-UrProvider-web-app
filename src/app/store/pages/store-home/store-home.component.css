@@ -1,0 +1,64 @@
+.mat-card img {
+  display: flex;
+  object-fit: cover;
+  height: 140px;
+  width: 160px;
+  margin-left: 20px;
+}
+.container{
+  display: inline-block;
+  text-align: left;
+  height: auto;
+}
+img {
+  object-fit: none;
+  width: 99vw;
+  height: 300px;
+}
+mat-card{
+  border: black solid 3px;
+
+}
+mat-card-header{
+  border: black solid 3px;
+}
+.example-card {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+  margin-left: 10px;
+  width: 200px;
+}
+.slogan {
+  position: absolute;
+  top: 28%;
+  left: 30%;
+  transform: translate(-40%, -20%);
+  font-family: "Bebas Neue", cursive;
+  font-size: 4vw;
+}
+.slogan h1:nth-child(1) {
+  color: #3F51B5;
+
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.game-name {
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-top:1rem
+}

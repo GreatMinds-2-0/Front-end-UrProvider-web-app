@@ -26,6 +26,7 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatDividerModule} from "@angular/material/divider";
 import {SuppliersService} from "./supplier/services/suppliers.service";
 import { SupplierEditProfileComponent } from './supplier/pages/supplier-edit-profile/supplier-edit-profile.component';
+import { StoreSupplierProfileComponent } from './store/pages/store-supplier-profile/store-supplier-profile.component';
 
 
 
@@ -39,6 +40,7 @@ import { SupplierEditProfileComponent } from './supplier/pages/supplier-edit-pro
     SupplierHomeComponent,
     SupplierProfileComponent,
     SupplierEditProfileComponent,
+    StoreSupplierProfileComponent,
 
   ],
   imports: [

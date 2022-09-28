@@ -3,6 +3,7 @@ export interface Supplier {
   supplierName: string;
   name: string;
   lastName: string;
+  image: string;
   email: string;
   password: string;
   ruc: string;

@@ -19,7 +19,7 @@ export class AppComponent {
   ]
 
   options2 = [
-    { path: ``, title: 'Home'},
+    { path: `/store-home/${this.id}`, title: 'Home'},
     { path: '', title: 'Orders'},
     { path: '', title: 'Notifications'},
     { path: '', title: 'Profile'}
