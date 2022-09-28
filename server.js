@@ -4,11 +4,9 @@ const server = jsonServer.create();
 const router = jsonServer.router("server/db.json");
 const middlewares = jsonServer.defaults({ static: "./build" });
 const port = process.env.PORT || 3000;
-
-server.use(middlewares);
-server.use(router);
-server.listen(port);
 const app = express();
+
+
 
 app.use(express.static(__dirname+'/dist/urprovider-webapp'));
 
@@ -17,3 +15,6 @@ app.get('/*',(req,resp)=> {
 });
 
 app.listen(process.env.PORT || 8080);
+server.use(middlewares);
+server.use(router);
+server.listen(port);
