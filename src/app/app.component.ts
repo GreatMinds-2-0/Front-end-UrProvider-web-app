@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   searchTerm = '';
-  profile = 'supplier';
+  profile = 'store';
   id = 1;
   title = 'urprovider-webapp';
   options = [
@@ -17,11 +17,11 @@ export class AppComponent {
     { path: `/supplier-inventory/${this.id}`, title: 'Inventory'},
     { path: `/supplier-profile/${this.id}`, title: 'Profile'}
   ]
-
+  /*Store*/
   options2 = [
     { path: ``, title: 'Home'},
     { path: '', title: 'Orders'},
     { path: '', title: 'Notifications'},
-    { path: '', title: 'Profile'}
+    { path: `/store-profile/${this.id}`, title: 'Profile'}
   ]
 }

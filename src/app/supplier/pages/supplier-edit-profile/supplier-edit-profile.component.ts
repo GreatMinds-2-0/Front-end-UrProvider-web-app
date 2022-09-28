@@ -11,7 +11,6 @@ import {SuppliersService} from "../../services/suppliers.service";
 })
 export class SupplierEditProfileComponent implements OnInit {
   id?:any;
-  asd?:any;
   updateSupplierData: Supplier;
   profilesData: Supplier;
 
@@ -27,8 +26,7 @@ export class SupplierEditProfileComponent implements OnInit {
 
   getData(id: number) {
     this.route.params.subscribe(() => this.supplierService.getById(id).subscribe((retrievedPost) => {
-
-      this.asd = retrievedPost.id,
+      this.profilesData.image=retrievedPost.image,
         this.profilesData.supplierName = retrievedPost.supplierName,
         this.profilesData.name = retrievedPost.name,
         this.profilesData.lastName = retrievedPost.lastName,
@@ -54,7 +52,8 @@ export class SupplierEditProfileComponent implements OnInit {
       category: this.profilesData.category,
       description: this.profilesData.description,
       phone: this.profilesData.phone,
-      password: this.profilesData.password
+      password: this.profilesData.password,
+      image: this.profilesData.image
     }
 
     this.supplierService.update(this.id, updatePost).subscribe();

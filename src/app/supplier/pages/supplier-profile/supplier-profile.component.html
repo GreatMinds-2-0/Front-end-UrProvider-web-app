@@ -3,7 +3,9 @@
     <form>
       <h1 class="title">Supplier</h1>
       <br>
-      <mat-icon class="icon-display" inline=true>account_circle</mat-icon>
+      <div mat-dialog-actions align="center" >
+        <img mat-card-image style="max-width: 70px;" [src]="supplierData.image"/>
+      </div>
       <br>
       <div class="content">
         <b>Supplier Name: </b> {{supplierData.supplierName}}
@@ -36,7 +38,7 @@
         <b>Phone: </b> {{supplierData.phone}}
       </div>
       <div mat-dialog-actions align="center">
-        <button mat-raised-button color="primary" [routerLink]= "['/supplier-profile-edit',supplierData.id]">Edit Profile</button>
+        <button mat-raised-button color="primary" [routerLink]= "['/supplier-profile-edit',id]">Edit Profile</button>
       </div>
       <br>
     </form>
