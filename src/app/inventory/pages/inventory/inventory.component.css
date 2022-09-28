@@ -1,0 +1,21 @@
+.product-card {
+  max-width: 400px;
+  background-color: #DCE4FC;
+  color: black;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 50px;
+}

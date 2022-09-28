@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 /*Add component*/
 import {AppRoutingModule} from './app-routing.module';
-import {InventoryComponent} from './inventory/pages/inventory.component';
+import {InventoryComponent} from './inventory/pages/inventory/inventory.component';
 import {SignInComponent} from './security/pages/sign-in/sign-in.component';
 import {SignUpComponent} from './security/pages/sign-up/sign-up.component';
 import {StoreHomeComponent} from './store/pages/store-home/store-home.component';
@@ -27,6 +27,7 @@ import {MatDividerModule} from "@angular/material/divider";
 import {SuppliersService} from "./supplier/services/suppliers.service";
 import { SupplierEditProfileComponent } from './supplier/pages/supplier-edit-profile/supplier-edit-profile.component';
 import { StoreSupplierProfileComponent } from './store/pages/store-supplier-profile/store-supplier-profile.component';
+import { EditProductComponent } from './inventory/pages/edit-product/edit-product.component';
 
 
 
@@ -41,6 +42,7 @@ import { StoreSupplierProfileComponent } from './store/pages/store-supplier-prof
     SupplierProfileComponent,
     SupplierEditProfileComponent,
     StoreSupplierProfileComponent,
+    EditProductComponent,
 
   ],
   imports: [

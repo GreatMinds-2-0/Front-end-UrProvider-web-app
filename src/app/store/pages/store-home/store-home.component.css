@@ -5,23 +5,27 @@
   width: 160px;
   margin-left: 20px;
 }
+
 .container{
   display: inline-block;
   text-align: left;
   height: auto;
 }
+
 img {
   object-fit: none;
   width: 99vw;
   height: 300px;
 }
+
 mat-card{
   border: black solid 3px;
-
 }
+
 mat-card-header{
   border: black solid 3px;
 }
+
 .example-card {
   color: black;
   background-color: transparent;
@@ -29,6 +33,7 @@ mat-card-header{
   margin-left: 10px;
   width: 200px;
 }
+
 .slogan {
   position: absolute;
   top: 28%;
@@ -39,7 +44,6 @@ mat-card-header{
 }
 .slogan h1:nth-child(1) {
   color: #3F51B5;
-
 }
 
 .flex {
@@ -52,7 +56,6 @@ mat-card-header{
   justify-content: center;
   align-items: center;
   gap: 30px;
-
 }
 
 .game-name {
