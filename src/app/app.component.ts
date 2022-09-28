@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  profile = 'store';
+  profile = 'supplier';
   id = 1;
   title = 'urprovider-webapp';
   options = [

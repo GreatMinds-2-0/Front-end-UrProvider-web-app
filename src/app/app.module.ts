@@ -73,7 +73,8 @@ import { ProductsSearchComponent } from './store/pages/products-search/products-
     MatSortModule,
     MatCardModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatSlideToggleModule
   ],
   providers: [SuppliersService, StoresService, ProductsService],
   bootstrap: [AppComponent]
