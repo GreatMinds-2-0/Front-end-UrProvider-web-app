@@ -2,7 +2,7 @@
 
 <div class="mm">
   <mat-card class="product-card">
-    <h1 class="title-row">Store</h1>
+    <h1 class="title-row">Supplier</h1>
     <div align="center">
       <img class="image" [src] ="profilesData.image">
     </div>
@@ -44,4 +44,12 @@
     </div>
     <br>
   </mat-card>
+</div>
+
+<div align="center">
+  <div class="example-button-container">
+    <button mat-mini-fab class="back-button" aria-label="Back icon button" [routerLink]="['/supplier-profile', id]">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+  </div>
 </div>

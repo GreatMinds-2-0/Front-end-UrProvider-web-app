@@ -1,5 +1,6 @@
 .container2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -36,4 +37,16 @@
   margin-top: 50px;
   color: white;
   background-color: #3F51B5;
+}
+
+.example-button-container {
+  display: flex;
+  padding-top: 30px;
+  justify-content: center;
+  width: 120px;
+}
+
+.back-button {
+  background-color: #DCE4FC;
+  text-align: center;
 }

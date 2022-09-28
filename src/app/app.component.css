@@ -5,14 +5,3 @@
 .navbarc {
   background-color: #457B9D;
 }
-
-.example-button-container {
-  display: flex;
-  justify-content: center;
-  width: 120px;
-}
-
-.back-button {
-  background-color: #DCE4FC;
-  text-align: center;
-}
