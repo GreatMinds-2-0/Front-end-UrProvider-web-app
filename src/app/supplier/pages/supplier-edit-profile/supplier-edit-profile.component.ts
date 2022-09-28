@@ -36,6 +36,7 @@ export class SupplierEditProfileComponent implements OnInit {
         this.profilesData.phone = retrievedPost.phone,
         this.profilesData.category = retrievedPost.category
     }));
+
   }
 
   updateProfile() {

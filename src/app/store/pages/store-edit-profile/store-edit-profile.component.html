@@ -1,0 +1,39 @@
+<div class="mm">
+  <div class="supplier-form">
+    <form>
+      <h1 class="title">Store</h1>
+      <div mat-dialog-actions align="center">
+        <img mat-card-image style="max-width: 70px;"  [src]=storeData.image>
+      </div>
+      <div class="content">
+        <b>Store Name: </b> <input style="border-radius: 10px" type="text" name="supplierName" [(ngModel)]="storeData.storeName" class="form-control mb-3">
+      </div>
+      <br>
+      <div class="content">
+        <b>Name: </b> <input style="border-radius: 10px" type="text" name="name"[(ngModel)]="storeData.name" class="form-control mb-3">
+      </div>
+      <br>
+      <div class="content">
+        <b>Last Name: </b> <input style="border-radius: 10px" type="text" name="last_name"[(ngModel)]="storeData.lastName" class="form-control mb-3">
+      </div>
+      <br>
+      <div class="content">
+        <b>Email: </b> <input style="border-radius: 10px" type="text" name="email"[(ngModel)]="storeData.email" class="form-control mb-3">
+      </div>
+      <br>
+      <div class="content">
+        <b>Address: </b> <input style="border-radius: 10px" type="text" name="address"[(ngModel)]="storeData.address" class="form-control mb-3">
+      </div>
+      <div class="content">
+        <b>Password: </b> <input style="border-radius: 10px" type="text" name="password"[(ngModel)]="storeData.password" class="form-control mb-3">
+      </div>
+      <div class="content">
+        <b>Phone: </b> <input style="border-radius: 10px" type="text" name="phone"[(ngModel)]="storeData.phone" class="form-control mb-3">
+      </div>
+      <div mat-dialog-actions align="center">
+        <button mat-raised-button color="primary" (click)="updateProfile()" [routerLink]= "['/store-profile',id]">Save</button>
+      </div>
+      <br>
+    </form>
+  </div>
+</div>

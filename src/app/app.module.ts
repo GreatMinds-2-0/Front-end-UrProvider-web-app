@@ -26,11 +26,13 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatDividerModule} from "@angular/material/divider";
 import {SuppliersService} from "./supplier/services/suppliers.service";
 import { SupplierEditProfileComponent } from './supplier/pages/supplier-edit-profile/supplier-edit-profile.component';
+import { StoreProfileComponent } from './store/pages/store-profile/store-profile.component';
+import {StoresService} from "./store/services/stores.service";
+import { StoreEditProfileComponent } from './store/pages/store-edit-profile/store-edit-profile.component';
 import { StoreSupplierProfileComponent } from './store/pages/store-supplier-profile/store-supplier-profile.component';
 import { EditProductComponent } from './inventory/pages/edit-product/edit-product.component';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { AddProductComponent } from './inventory/pages/add-product/add-product.component';
-import {StoresService} from "./store/services/stores.service";
 import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 
@@ -50,6 +52,8 @@ import { ProductsSearchComponent } from './store/pages/products-search/products-
     EditProductComponent,
     AddProductComponent,
     ProductsSearchComponent,
+    StoreProfileComponent,
+    StoreEditProfileComponent,
 
   ],
   imports: [
@@ -69,8 +73,7 @@ import { ProductsSearchComponent } from './store/pages/products-search/products-
     MatSortModule,
     MatCardModule,
     MatGridListModule,
-    MatDividerModule,
-    MatSlideToggleModule
+    MatDividerModule
   ],
   providers: [SuppliersService, StoresService, ProductsService],
   bootstrap: [AppComponent]

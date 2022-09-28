@@ -1,0 +1,37 @@
+<div class="mm">
+  <div class="supplier-form">
+    <form>
+      <h1 class="title">Store</h1>
+      <br>
+      <div mat-dialog-actions align="center">
+          <img mat-card-image style="max-width: 70px;" [src]="storeData.image">
+      </div>
+      <br>
+      <div class="content">
+        <b>Store Name: </b> {{storeData.storeName}}
+      </div>
+      <div class="content">
+        <b>Name: </b> {{storeData.name}}
+      </div>
+      <div class="content">
+        <b>Last Name: </b> {{storeData.lastName}}
+      </div>
+      <div class="content">
+        <b>Email: </b> {{storeData.email}}
+      </div>
+      <div class="content">
+        <b>Address: </b> {{storeData.address}}
+      </div>
+      <div class="content">
+        <b>Password: </b> {{storeData.password}}
+      </div>
+      <div class="content">
+        <b>Phone: </b> {{storeData.phone}}
+      </div>
+      <div mat-dialog-actions align="center">
+        <button mat-raised-button color="primary" [routerLink]= "['/store-edit-profile',storeData.id]">Edit Profile</button>
+      </div>
+      <br>
+    </form>
+  </div>
+</div>
