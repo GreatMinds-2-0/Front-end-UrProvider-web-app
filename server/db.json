@@ -2,38 +2,93 @@
   "stores": [
     {
       "id": 1,
-      "storeName": "Mass",
+      "storeName": "Mass SuperMarket",
       "name": "Josue",
       "lastName": "Vilchez",
       "email": "j.vil@gmail.com",
       "password": "santamaria2",
       "phone": "987883514",
-      "address": "Calle Bolivar 257"
+      "address": "Street Bolivar 257",
+      "image": "https://www.tiendasmass.com.pe/img/Exterior.eb7bd7f8.jpg"
+    },
+    {
+      "id": 2,
+      "storeName": "Los Inkas Market",
+      "name": "Thomas",
+      "lastName": "Campoy",
+      "email": "thom_23@gmail.com",
+      "password": "campo_santo",
+      "phone": "966538021",
+      "address": "Street Libertadores 722",
+      "image": "https://www.gpsmycity.com/img/gd_attr/23345.jpg"
+    },
+    {
+      "id": 3,
+      "storeName": "TechnoPlace",
+      "name": "Leyla",
+      "lastName": "Garrido",
+      "email": "ley.gar.99@gmail.com",
+      "password": "p455w0rd",
+      "phone": "974633180",
+      "address": "Avenue El Golfo 109",
+      "image": "https://www.alimarket.es/media/images/2018/detalle_art/284205/181068_high_original.jpg"
     }
   ],
   "suppliers": [
     {
       "id": 1,
-      "supplierName": "Bebidas San Joel SA",
+      "supplierName": "San Joel Drinks Company",
       "name": "Pedro",
       "lastName": "Lam",
       "email": "pedro_22@gmail.com",
       "category": "Food and Beverage",
       "password": "sanjoel.40",
       "ruc": "78903567651",
-      "description": "Bebidas San Joel SA is a Peruvian company that owns several supermarket chains. It began operations in 2004",
+      "description": "San Joel Drinks Company is a Peruvian company that owns several supermarket chains. It began operations in 2004",
       "phone": "906774532",
-      "address": "Calle Vicente del Campo 308"
+      "address": "Street Vicente del Campo 308"
+    },
+    {
+      "id": 2,
+      "supplierName": "Good Items Corp",
+      "name": "Alonso",
+      "lastName": "Kamp",
+      "email": "alkamp@gmail.com",
+      "category": "Technology",
+      "password": "kamptec1",
+      "ruc": "16789352314",
+      "description": "Good Items Corp is a Peruvian company that sells multiple technology products. It began operations in 2016",
+      "phone": "976067993",
+      "address": "Street Los Portales 876"
     }
   ],
   "products": [
     {
       "id": 1,
-      "name": "Gaseosa Cola Imperial",
+      "name": "Chicha Morada Drink",
       "supplierId": 1,
       "category": "Food and Beverage",
+      "image": "https://s3.amazonaws.com/bsalemarket/39452/product/AGU390CHIdefault.jpg",
       "available": true,
-      "description": "Orange flavor soda (500 ml)"
+      "description": "Purple corn drink (550 ml)"
+    },
+    {
+      "id": 2,
+      "name": "Cola Imperial Soda",
+      "supplierId": 1,
+      "category": "Food and Beverage",
+      "image": "https://transmarket.pe/wp-content/uploads/2020/06/KR-NARANJA-1700-ML.jpg",
+      "available": true,
+      "description": "Orange flavoured soda (500 ml)"
+    },
+    {
+      "id": 3,
+      "name": "JBL Speaker",
+      "supplierId": 2,
+      "category": "Technology",
+      "image": "https://www.tradeinn.com/f/13737/137378886/jbl-flip-5-wireless-bluetooth-speaker.jpg",
+      "available": true,
+      "description": "Wireless bluetooth JBL speaker"
     }
   ]
 }

@@ -3,6 +3,7 @@ export interface Product {
   name: string;
   supplierId: number;
   category: string;
+  image: string;
   available: boolean;
   description: string;
 }

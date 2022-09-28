@@ -7,4 +7,5 @@ export interface Store {
   password: string;
   phone: string;
   address: string;
+  image: string;
 }
