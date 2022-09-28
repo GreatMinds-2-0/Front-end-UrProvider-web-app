@@ -24,7 +24,7 @@ import {MatSortModule} from "@angular/material/sort";
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatDividerModule} from "@angular/material/divider";
-import {SuppliersService} from "./business/services/suppliers.service";
+import {SuppliersService} from "./supplier/services/suppliers.service";
 
 
 

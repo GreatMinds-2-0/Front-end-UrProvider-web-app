@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from "@angular/router";
-import {SupplierHomeComponent} from "./business/pages/supplier/supplier-home/supplier-home.component";
-import {SupplierInventoryComponent} from "./business/pages/supplier/supplier-inventory/supplier-inventory.component";
+import {SupplierHomeComponent} from "./supplier/pages/supplier-home/supplier-home.component";
+import {InventoryComponent} from "./inventory/pages/inventory.component";
 
 const routes: Routes = [
   { path: 'supplier-home/:id', component: SupplierHomeComponent },
-  { path: 'supplier-inventory/:id', component: SupplierInventoryComponent },
+  { path: 'supplier-inventory/:id', component: InventoryComponent },
   { path: '', redirectTo: 'supplier-home/:id', pathMatch: 'full' }
 ];
 
