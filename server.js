@@ -1,11 +1,11 @@
-const express = require('express');
-const path = require('path');
+let express = require('express');
 
 const app = express();
 
-app.use(express.static('./dist/urprovider-webapp"'));
-app.get('/*',(req,res)=>
-  res.sendFile('index.html',{root:'dist/urprovider-webapp"'}),
-);
+app.use(express.static(__dirname+'/dist/urprovider-webapp'));
+
+app.get('/*',(req,resp)=> {
+  resp.sendFile(__dirname + '/dist/urprovider-webapp/index.html');
+});
 
 app.listen(process.env.PORT || 8080);
