@@ -39,8 +39,8 @@
       "supplierName": "San Joel Drinks Company",
       "name": "Diego",
       "lastName": "Lam",
+      "image": "https://www.portafolio.co/files/article_multimedia/uploads/2021/09/04/613390daa6fce.jpeg",
       "email": "diego.40@gmail.com",
-      "image": "https://1.bp.blogspot.com/-SGbXpT_ClLk/Wc7ZIYq7TFI/AAAAAAABBNg/nS4Lhe9eeQ8bcC4_s90x3lm2ArWXgHfWgCLcBGAs/s1600/grupo-joel.jpg",
       "address": "Street Vicente del Campo 308",
       "ruc": "7536345344",
       "category": "Food and Beverage",
@@ -50,18 +50,18 @@
       "id": 1
     },
     {
-      "id": 2,
       "supplierName": "Good Items Corp",
       "name": "Alonso",
       "lastName": "Kamp",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0jnVhECdWriA788AX-1HlsWInQ2HtqqRoQpwA99ANrHx5_Lct4gbxI3AQx44VrKC6xuc&usqp=CAU",
+      "image": "https://cdn.businessinsider.es/sites/navi.axelspringer.es/public/styles/bi_570/public/media/image/2022/01/ces-2022-2582123.jpg?itok=D5YEuU3R",
       "email": "alkamp@gmail.com",
-      "category": "Technology",
-      "password": "kamptec1",
+      "address": "Street Los Portales 876",
       "ruc": "16789352314",
+      "category": "Technology",
       "description": "Good Items Corp is a Peruvian company that sells multiple technology products. It began operations in 2016",
       "phone": "976067993",
-      "address": "Street Los Portales 876"
+      "password": "kamptec1",
+      "id": 2
     }
   ],
   "products": [

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   searchTerm = '';
-  profile = 'supplier';
+  profile = 'store';
   id = 1;
   title = 'urprovider-webapp';
   options = [

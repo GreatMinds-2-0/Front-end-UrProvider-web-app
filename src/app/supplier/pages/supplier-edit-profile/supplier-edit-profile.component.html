@@ -2,9 +2,9 @@
   <div class="supplier-form">
     <form>
       <h1 class="title">Store</h1>
-      <br>
-      <mat-icon class="icon-display" inline=true>account_circle</mat-icon>
-      <br>
+      <div align="center">
+        <img class="image" [src] ="profilesData.image">
+      </div>
       <div class="content">
         <b>Supplier Name: </b> <input style="border-radius: 10px" type="text" name="supplierName" [(ngModel)]="profilesData.supplierName" class="form-control mb-3">
       </div>
