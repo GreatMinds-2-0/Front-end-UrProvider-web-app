@@ -3,9 +3,9 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static('./dist/Front-end-UrProvider-web-app'));
+app.use(express.static('./dist/urprovider-webapp"'));
 app.get('/*',(req,res)=>
-  res.sendFile('index.html',{root:'dist/Front-end-UrProvider-web-app'}),
+  res.sendFile('index.html',{root:'dist/urprovider-webapp"'}),
 );
 
 app.listen(process.env.PORT || 8080);
