@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  searchTerm = '';
-  profile = 'supplier';
+  profile = 'store';
   id = 1;
   title = 'urprovider-webapp';
   options = [

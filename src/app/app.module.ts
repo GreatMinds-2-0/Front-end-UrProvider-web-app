@@ -32,6 +32,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { AddProductComponent } from './inventory/pages/add-product/add-product.component';
 import {StoresService} from "./store/services/stores.service";
 import {ProductsService} from "./inventory/services/products.service";
+import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 
 
 
@@ -48,6 +49,7 @@ import {ProductsService} from "./inventory/services/products.service";
     StoreSupplierProfileComponent,
     EditProductComponent,
     AddProductComponent,
+    ProductsSearchComponent,
 
   ],
   imports: [

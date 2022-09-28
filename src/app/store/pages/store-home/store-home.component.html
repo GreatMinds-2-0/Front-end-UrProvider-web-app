@@ -1,15 +1,22 @@
-<div class="container">
-  <img src="assets/img/cajas.jpg" alt="cajas">
-  <div class="slogan" >
-    <h1>Hello {{storeData.name}} {{storeData.lastName}}</h1>
-    <h2>We are happy to continue working with {{storeData.storeName}}</h2>
-  </div>
-
+<div align="center">
+  <mat-form-field class="search" appearance="fill">
+    <mat-label>Search products</mat-label>
+    <input matInput [(ngModel)]="searchTerm" placeholder="Search products by name"/>
+    <mat-icon matPrefix [routerLink]= "['/store-products-list', id]">search</mat-icon>
+  </mat-form-field>
 </div>
+
+<mat-card class="homecard">
+  <mat-card-content>
+    <h1>Hello {{storeData.name}} {{storeData.lastName}}</h1>
+    <p>We are happy to continue working with <b>{{storeData.storeName}}</b></p>
+  </mat-card-content>
+</mat-card>
+
 <h1>Favorite Providers:</h1>
 <div  class="container2">
   <div *ngFor="let supplier of supplierData">
-    <a style="text-decoration: none" [routerLink]="['/store-providers-profile',supplier.id]">
+    <a style="text-decoration: none" [routerLink]="['/store-providers-profile', id, supplier.id]">
       <mat-card class="example-card">
         <mat-card-header>
           <mat-card-title class="game-name">{{supplier.supplierName}}</mat-card-title>

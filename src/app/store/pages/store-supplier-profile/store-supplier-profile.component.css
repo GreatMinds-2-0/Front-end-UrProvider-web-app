@@ -103,3 +103,15 @@ mat-paginator{
   width: 200%;
   background: #DCE4FC;
 }
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 120px;
+}
+
+.back-button {
+  background-color: #DCE4FC;
+  text-align: center;
+}

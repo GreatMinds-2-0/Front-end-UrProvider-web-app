@@ -4,6 +4,9 @@ import {SuppliersService} from "../../../supplier/services/suppliers.service";
 import {ActivatedRoute} from "@angular/router";
 import {Store} from "../../model/store";
 import {StoresService} from "../../services/stores.service";
+import {MatTableDataSource} from "@angular/material/table";
+import {Product} from "../../../inventory/model/product";
+import {ProductsService} from "../../../inventory/services/products.service";
 
 @Component({
   selector: 'app-store-home',
@@ -11,12 +14,17 @@ import {StoresService} from "../../services/stores.service";
   styleUrls: ['./store-home.component.css']
 })
 export class StoreHomeComponent implements OnInit {
-//
+
+  searchTerm = '';
   id: any;
   storeData: Store;
   supplierData: Array<Supplier>;
+  dataSource: MatTableDataSource<any> = new MatTableDataSource<Product>()
 
-  constructor(private suppliersService: SuppliersService, private route: ActivatedRoute, private storesService: StoresService) {
+  constructor(private suppliersService: SuppliersService,
+              private productsService: ProductsService,
+              private route: ActivatedRoute,
+              private storesService: StoresService) {
     this.supplierData = [];
     this.storeData = {} as Store;
   }
@@ -25,6 +33,7 @@ export class StoreHomeComponent implements OnInit {
     this.id = this.route.snapshot.paramMap.get("id");
     this.getSupplier();
     this.getStoreById(this.id);
+    this.getAllProducts();
   }
 
   getSupplier() {
@@ -39,5 +48,15 @@ export class StoreHomeComponent implements OnInit {
     })
   }
 
+  getAllProducts() {
+    this.productsService.getAll().subscribe((response:any)=>{
+      this.dataSource = response;
+    })
+  }
 
+  filterProducts(searchTerm: string) {
+    this.dataSource.filter = searchTerm.trim().toLocaleLowerCase();
+    const filterValue = searchTerm;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 }
