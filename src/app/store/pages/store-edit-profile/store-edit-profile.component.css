@@ -31,3 +31,14 @@
   align-items: center;
   flex-direction: column;
 }
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  width: 120px;
+}
+
+.back-button {
+  background-color: #DCE4FC;
+  text-align: center;
+}
