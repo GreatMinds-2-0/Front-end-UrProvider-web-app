@@ -18,13 +18,14 @@ export class InventoryComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get("id");
+    this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.getAllProducts();
   }
 
   getAllProducts() {
     this.productsService.getAll().subscribe((response:any) => {
       this.products = response;
+      this.products = this.products.filter(x => x.supplierId == this.id)
     });
   }
 

@@ -8,7 +8,7 @@
 <div class="grid">
   <div>
     <h1 class="header">My Clients</h1>
-    <mat-card *ngFor="let store of stores" class="product-card">
+    <mat-card *ngFor="let store of stores" class="product-card" (click)="redirectClient(store.id)">
       <mat-card-title-group>
         <mat-card-title>{{ store.storeName }}</mat-card-title>
         <mat-card-subtitle>Person in charge: {{ store.name }} {{ store.lastName }}</mat-card-subtitle>

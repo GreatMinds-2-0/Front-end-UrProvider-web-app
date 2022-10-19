@@ -19,8 +19,8 @@ export class EditProductComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get("id");
-    this.pid = this.route.snapshot.paramMap.get("pid");
+    this.id = Number(this.route.snapshot.paramMap.get("id"));
+    this.pid = Number(this.route.snapshot.paramMap.get("pid"));
     this.getProductData(this.pid);
   }
 
@@ -36,7 +36,8 @@ export class EditProductComponent implements OnInit {
       category: this.productData.category,
       image: this.productData.image,
       available: this.productData.available,
-      description: this.productData.description
+      description: this.productData.description,
+      supplierId: this.id
     }
 
     this.productsService.update(this.productData.id, updateP).subscribe();
