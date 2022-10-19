@@ -25,6 +25,7 @@ export class InventoryComponent implements OnInit {
   getAllProducts() {
     this.productsService.getAll().subscribe((response:any) => {
       this.products = response;
+      this.products = this.products.filter(x => x.supplierId == this.id)
     });
   }
 

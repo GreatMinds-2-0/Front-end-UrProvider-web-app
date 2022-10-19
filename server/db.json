@@ -109,6 +109,15 @@
       "description": "Shirts of famous football teams",
       "supplierId": "1",
       "id": 5
+    },
+    {
+      "name": "Vacuumator",
+      "category": "Technology",
+      "image": "https://falabella.scene7.com/is/image/FalabellaPE/18038935_1?wid=800&hei=800&qlt=70",
+      "available": true,
+      "description": "robot vacuum cleaner",
+      "supplierId": "2",
+      "id": 6
     }
   ]
 }
