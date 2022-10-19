@@ -37,6 +37,7 @@ import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
 import { ProductsComponent } from './store/pages/products/products.component';
+import { ProductComponent } from './store/pages/product/product.component';
 
 
 
@@ -58,6 +59,7 @@ import { ProductsComponent } from './store/pages/products/products.component';
     StoreEditProfileComponent,
     SupplierViewClientComponent,
     ProductsComponent,
+    ProductComponent,
 
   ],
   imports: [
