@@ -1,18 +1,11 @@
-<div align="center">
-  <mat-form-field class="search" appearance="fill">
-    <mat-label>Search products</mat-label>
-    <input matInput [(ngModel)]="searchTerm" placeholder="Search products by name"/>
-    <mat-icon matPrefix (click)="filter()">search</mat-icon>
-  </mat-form-field>
-</div>
-
 <mat-card class="homecard">
   <mat-card-content>
     <h1>Hello {{storeData.name}} {{storeData.lastName}}</h1>
     <p>We are happy to continue working with <b>{{storeData.storeName}}</b></p>
   </mat-card-content>
 </mat-card>
-
+<h1>Favorite Products:</h1>
+<app-products-search></app-products-search>
 <h1>Favorite Providers:</h1>
 <div class="container2">
   <div *ngFor="let supplier of supplierData">
@@ -26,3 +19,5 @@
     </a>
   </div>
 </div>
+
+

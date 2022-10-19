@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Product} from "../../../inventory/model/product";
 import {ProductsService} from "../../../inventory/services/products.service";
 import {ActivatedRoute} from "@angular/router";
+import {MatTableDataSource} from "@angular/material/table";
 
 @Component({
   selector: 'app-products-search',
@@ -13,6 +14,7 @@ export class ProductsSearchComponent implements OnInit {
   searchTerm: any;
   id: any;
   products: Array<Product>;
+  dataSource = new MatTableDataSource<Product>;
 
   constructor(private productsService: ProductsService,
               private route: ActivatedRoute) {
@@ -27,8 +29,13 @@ export class ProductsSearchComponent implements OnInit {
 
   getAllProducts() {
     this.productsService.getAll().subscribe((response:any)=>{
-      this.products = response;
-      this.products = this.products.filter(x => x.name.toLowerCase().includes(this.searchTerm.toLowerCase()))
+      this.dataSource.data= response;
     })
   }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
 }

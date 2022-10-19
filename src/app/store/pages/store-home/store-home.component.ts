@@ -34,7 +34,6 @@ export class StoreHomeComponent implements OnInit {
     this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.getSupplier();
     this.getStoreById(this.id);
-    this.getAllProducts();
   }
 
   getSupplier() {
@@ -49,13 +48,4 @@ export class StoreHomeComponent implements OnInit {
     })
   }
 
-  getAllProducts() {
-    this.productsService.getAll().subscribe((response:any)=>{
-      this.dataSource = response;
-    })
-  }
-
-  filter(){
-    this.router.navigate([`./store-products-list/${this.id}/${this.searchTerm}`]);
-  }
 }

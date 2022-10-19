@@ -2,7 +2,13 @@
   text-align: center;
   margin-top: 50px;
 }
-
+.mat-form-field {
+  width: 100%;
+  font-size: 15px;
+  background-color: #5598c3;
+  color: black;
+  border-radius: 10px;
+}
 .mt-5 {
   margin-top: 3rem !important;
 }
@@ -43,3 +49,12 @@
   background-color: #DCE4FC;
   text-align: center;
 }
+.example-card {
+  padding-left: 105px;
+}
+
+
+
+
+
+

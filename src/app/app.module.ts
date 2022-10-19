@@ -13,7 +13,7 @@ import { SupplierProfileComponent } from './supplier/pages/supplier-profile/supp
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {MatTableModule} from "@angular/material/table";
+import { MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
@@ -37,6 +37,7 @@ import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +55,7 @@ import { SupplierViewClientComponent } from './supplier/pages/supplier-view-clie
     StoreProfileComponent,
     StoreEditProfileComponent,
     SupplierViewClientComponent,
+
 
   ],
   imports: [
@@ -76,6 +78,7 @@ import { SupplierViewClientComponent } from './supplier/pages/supplier-view-clie
     MatDividerModule,
     MatSlideToggleModule,
     FormsModule
+
   ],
   providers: [SuppliersService, StoresService, ProductsService],
   bootstrap: [AppComponent]

@@ -7,7 +7,7 @@
       "email": "j.vil@gmail.com",
       "address": "Street Bolivar 257",
       "phone": "987883513",
-      "password": "santamaria3",
+      "password": "santamaria",
       "image": "https://www.tiendasmass.com.pe/img/Exterior.eb7bd7f8.jpg",
       "id": 1
     },
@@ -96,7 +96,7 @@
       "name": "Dron XTX",
       "category": "Technology",
       "image": "https://cdn.pocket-lint.com/r/s/x1920/assets/images/130265-drones-news-buyer-s-guide-best-drones-image22-r2dkig0qul.jpg",
-      "available": true,
+      "available": false,
       "description": "Cool flying robot ",
       "supplierId": 2,
       "id": 4
