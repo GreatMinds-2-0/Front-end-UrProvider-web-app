@@ -11,7 +11,8 @@ import {AddProductComponent} from "./inventory/pages/add-product/add-product.com
 import {ProductsSearchComponent} from "./store/pages/products-search/products-search.component";
 import {StoreProfileComponent} from "./store/pages/store-profile/store-profile.component";
 import {StoreEditProfileComponent} from "./store/pages/store-edit-profile/store-edit-profile.component";
-import {SupplierPlanComponent} from "./supplier/pages/supplier-plan/supplier-plan.component";
+import {PaymentMethodDialog, SupplierPlanComponent} from "./supplier/pages/supplier-plan/supplier-plan.component";
+import {MAT_DIALOG_DEFAULT_OPTIONS} from "@angular/material/dialog";
 import {SupplierViewClientComponent} from "./supplier/pages/supplier-view-client/supplier-view-client.component";
 
 const routes: Routes = [
@@ -36,6 +37,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ]
 })
 export class AppRoutingModule { }

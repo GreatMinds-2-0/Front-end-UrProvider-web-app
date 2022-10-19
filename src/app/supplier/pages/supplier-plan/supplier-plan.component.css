@@ -25,6 +25,12 @@
 .text{
   padding-bottom: 50px;
 }
+.but{
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  background-color: #3F51B5;
+}
 @media (max-width: 850px) {
     .parent{
       padding-left: 0;
