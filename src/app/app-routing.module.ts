@@ -30,7 +30,6 @@ const routes: Routes = [
   { path: 'store-providers-profile/:id/:pid', component: StoreSupplierProfileComponent},
   { path: 'store-products-list/:id', component: ProductsSearchComponent},
   { path: '', redirectTo: '/', pathMatch: 'full' },
-
 ];
 
 @NgModule({

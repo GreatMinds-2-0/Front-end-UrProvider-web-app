@@ -71,6 +71,7 @@
       "image": "https://s3.amazonaws.com/bsalemarket/39452/product/AGU390CHIdefault.jpg",
       "available": true,
       "description": "Purple corn drink (600 ml)",
+      "supplierId": "1",
       "id": 1
     },
     {
@@ -79,6 +80,7 @@
       "image": "https://transmarket.pe/wp-content/uploads/2020/06/KR-NARANJA-1700-ML.jpg",
       "available": true,
       "description": "Orange flavoured soda (600 ml)",
+      "supplierId": "1",
       "id": 2
     },
     {
@@ -87,6 +89,7 @@
       "image": "https://www.tradeinn.com/f/13737/137378886/jbl-flip-5-wireless-bluetooth-speaker.jpg",
       "available": true,
       "description": "Wireless bluetooth JBL speaker",
+      "supplierId": "2",
       "id": 3
     },
     {
@@ -95,7 +98,17 @@
       "image": "https://cdn.pocket-lint.com/r/s/x1920/assets/images/130265-drones-news-buyer-s-guide-best-drones-image22-r2dkig0qul.jpg",
       "available": true,
       "description": "Cool flying robot ",
+      "supplierId": "2",
       "id": 4
+    },
+    {
+      "name": "Football shirts",
+      "category": "Clothes",
+      "image": "https://tse2.mm.bing.net/th/id/OIP.wlNLOMcQDxVDz9H3c28jnwHaHa?pid=ImgDet&rs=1",
+      "available": true,
+      "description": "Shirts of famous football teams",
+      "supplierId": "1",
+      "id": 5
     }
   ]
 }

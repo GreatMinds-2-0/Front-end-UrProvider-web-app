@@ -21,6 +21,11 @@
   max-width: 400px;
   background-color: #457B9D;
   color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 50%;
 }
 
 table {
@@ -46,4 +51,18 @@ mat-grid-tile {
 .header {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.img-product {
+  max-width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
