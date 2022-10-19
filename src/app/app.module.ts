@@ -36,14 +36,11 @@ import { AddProductComponent } from './inventory/pages/add-product/add-product.c
 import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
-
 import {
   PaymentMethodDialog,
   SupplierPlanComponent
 } from './supplier/pages/supplier-plan/supplier-plan.component';
 import {MatDialogModule} from "@angular/material/dialog";
-
-import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
 
 @NgModule({
   declarations: [
