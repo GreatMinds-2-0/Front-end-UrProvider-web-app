@@ -3,7 +3,7 @@ import {Supplier} from "../../model/supplier";
 import {SuppliersService} from "../../services/suppliers.service";
 import {Store} from "../../../store/model/store";
 import {StoresService} from "../../../store/services/stores.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-supplier-home',
@@ -16,7 +16,8 @@ export class SupplierHomeComponent implements OnInit {
   supplierData: Supplier;
   stores: Array<Store>;
 
-  constructor(private suppliersService: SuppliersService,
+  constructor(private router: Router,
+              private suppliersService: SuppliersService,
               private storesService: StoresService,
               private route: ActivatedRoute) {
     this.supplierData = {} as Supplier;
@@ -24,7 +25,7 @@ export class SupplierHomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get("id");
+    this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.getSupplierById(Number(this.id));
     this.getAllStores();
   }
@@ -40,4 +41,7 @@ export class SupplierHomeComponent implements OnInit {
     })
   }
 
+  redirectClient(id: number) {
+    this.router.navigate([`./supplier/view-client/${this.id}/${id}`]);
+  }
 }
