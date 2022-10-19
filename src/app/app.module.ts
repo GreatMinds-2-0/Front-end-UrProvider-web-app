@@ -35,6 +35,9 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { AddProductComponent } from './inventory/pages/add-product/add-product.component';
 import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
+import { SupplierPlanComponent } from './supplier/pages/supplier-plan/supplier-plan.component';
+
+
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
 
 @NgModule({
@@ -53,6 +56,7 @@ import { SupplierViewClientComponent } from './supplier/pages/supplier-view-clie
     ProductsSearchComponent,
     StoreProfileComponent,
     StoreEditProfileComponent,
+    SupplierPlanComponent,
     SupplierViewClientComponent,
 
   ],

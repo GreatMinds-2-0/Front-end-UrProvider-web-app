@@ -11,10 +11,12 @@ import {AddProductComponent} from "./inventory/pages/add-product/add-product.com
 import {ProductsSearchComponent} from "./store/pages/products-search/products-search.component";
 import {StoreProfileComponent} from "./store/pages/store-profile/store-profile.component";
 import {StoreEditProfileComponent} from "./store/pages/store-edit-profile/store-edit-profile.component";
+import {SupplierPlanComponent} from "./supplier/pages/supplier-plan/supplier-plan.component";
 import {SupplierViewClientComponent} from "./supplier/pages/supplier-view-client/supplier-view-client.component";
 
 const routes: Routes = [
   { path: 'supplier-home/:id', component: SupplierHomeComponent },
+  {path:'supplier-plan/:id',component:SupplierPlanComponent},
   { path: 'supplier-inventory/:id', component: InventoryComponent },
   { path: 'supplier-profile/:id', component: SupplierProfileComponent},
   { path: 'supplier-profile-edit/:id', component: SupplierEditProfileComponent},
@@ -29,6 +31,7 @@ const routes: Routes = [
   { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},
   { path: 'supplier/view-client/:id/:cid', component: SupplierViewClientComponent},
   { path: '', redirectTo: '/', pathMatch: 'full' },
+
 ];
 
 @NgModule({
