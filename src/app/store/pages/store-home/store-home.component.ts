@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Supplier} from "../../../supplier/model/supplier";
 import {SuppliersService} from "../../../supplier/services/suppliers.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {Store} from "../../model/store";
 import {StoresService} from "../../services/stores.service";
 import {MatTableDataSource} from "@angular/material/table";
@@ -15,13 +15,14 @@ import {ProductsService} from "../../../inventory/services/products.service";
 })
 export class StoreHomeComponent implements OnInit {
 
-  searchTerm = '';
+  searchTerm: any;
   id: any;
   storeData: Store;
   supplierData: Array<Supplier>;
   dataSource: MatTableDataSource<any> = new MatTableDataSource<Product>()
 
-  constructor(private suppliersService: SuppliersService,
+  constructor(private router: Router,
+              private suppliersService: SuppliersService,
               private productsService: ProductsService,
               private route: ActivatedRoute,
               private storesService: StoresService) {
@@ -54,9 +55,7 @@ export class StoreHomeComponent implements OnInit {
     })
   }
 
-  filterProducts(searchTerm: string) {
-    this.dataSource.filter = searchTerm.trim().toLocaleLowerCase();
-    const filterValue = searchTerm;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+  filter(){
+    this.router.navigate([`./store-products-list/${this.id}/${this.searchTerm}`]);
   }
 }

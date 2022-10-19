@@ -37,8 +37,6 @@ import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +74,8 @@ import { SupplierViewClientComponent } from './supplier/pages/supplier-view-clie
     MatCardModule,
     MatGridListModule,
     MatDividerModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    FormsModule
   ],
   providers: [SuppliersService, StoresService, ProductsService],
   bootstrap: [AppComponent]
