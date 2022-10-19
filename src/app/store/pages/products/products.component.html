@@ -1,1 +1,14 @@
-<p>products works!</p>
+<h1>Products:</h1>
+
+<div class="container2 grid3c">
+  <div *ngFor="let product of products">
+    <div class="mt-5">
+      <mat-card class="product-card">
+        <mat-card-header>
+          <mat-card-title>{{ product.name }}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image class="img-products" [src]="product.image" alt="Reference product's photo">
+      </mat-card>
+    </div>
+  </div>
+</div>
