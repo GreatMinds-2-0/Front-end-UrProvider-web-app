@@ -16,17 +16,6 @@
 <h1>Favorite Products:</h1>
 <app-products-search></app-products-search>
 <h1>Favorite Providers:</h1>
-<div class="container2">
-  <div *ngFor="let supplier of supplierData">
-    <a style="text-decoration: none" [routerLink]="['/store-providers-profile', id, supplier.id]">
-      <mat-card class="provider-card">
-        <mat-card-header>
-          <mat-card-title class="game-name">{{supplier.supplierName}}</mat-card-title>
-        </mat-card-header>
-        <img mat-card-image src="{{supplier.image}}" alt="Photo of supplier">
-      </mat-card>
-    </a>
-  </div>
-</div>
+<app-suppliers-search></app-suppliers-search>
 
 

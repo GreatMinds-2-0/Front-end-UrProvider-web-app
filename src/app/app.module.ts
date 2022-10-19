@@ -37,6 +37,7 @@ import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
 import { SuppliersSearchComponent } from './store/pages/suppliers-search/suppliers-search.component';
+import {MatDialogModule} from "@angular/material/dialog";
 
 
 @NgModule({
@@ -79,7 +80,8 @@ import { SuppliersSearchComponent } from './store/pages/suppliers-search/supplie
     MatGridListModule,
     MatDividerModule,
     MatSlideToggleModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
 
   ],
   providers: [SuppliersService, StoresService, ProductsService],
