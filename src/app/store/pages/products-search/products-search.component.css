@@ -25,7 +25,8 @@
 }
 
 .product-card {
-  max-width: 400px;
+  max-width: 300px;
+  min-width: 300px;
   background-color: #DCE4FC;
   color: black;
 }

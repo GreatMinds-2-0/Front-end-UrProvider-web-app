@@ -19,7 +19,6 @@ export class StoreHomeComponent implements OnInit {
   id: any;
   storeData: Store;
   supplierData: Array<Supplier>;
-  dataSource: MatTableDataSource<any> = new MatTableDataSource<Product>()
 
   constructor(private router: Router,
               private suppliersService: SuppliersService,

@@ -38,20 +38,22 @@ export class StoreSupplierProfileComponent implements OnInit {
     }
   ];
   id:any;
-  supplierDatas: Supplier;
+  pid:any;
+  supplierData: Supplier;
   constructor(private suppliersService: SuppliersService,
               private route: ActivatedRoute) {
-    this.supplierDatas = {} as Supplier;
+    this.supplierData = {} as Supplier;
   }
 
   ngOnInit(): void {
+    this.pid = Number(this.route.snapshot.paramMap.get("pid"));
+    this.getSupplierById(Number(this.pid));
     this.id = Number(this.route.snapshot.paramMap.get("id"));
-    this.getSupplierById(Number(this.id));
   }
 
   getSupplierById(id: number) {
     this.suppliersService.getById(id).subscribe((response:any) => {
-      this.supplierDatas = response;
+      this.supplierData = response;
     })
   }
 
