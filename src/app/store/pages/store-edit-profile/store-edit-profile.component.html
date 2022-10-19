@@ -7,26 +7,48 @@
       <img mat-card-image style="max-width: 70px;"  [src]=storeData.image>
     </div>
     <div class="row clean-row">
-      <b>Store Name: </b> <input style="border-radius: 10px" type="text" name="supplierName" [(ngModel)]="storeData.storeName" class="form-control mb-3">
+      <mat-form-field>
+        <mat-label style="color: black">Store Name</mat-label>
+        <input matInput placeholder="supplierName" [(ngModel)]="storeData.storeName">
+      </mat-form-field>
     </div>
     <div class="row clean-row">
-      <b>Name: </b> <input style="border-radius: 10px" type="text" name="name"[(ngModel)]="storeData.name" class="form-control mb-3">
+      <mat-form-field>
+        <mat-label style="color: black">Name</mat-label>
+        <input matInput placeholder="name" [(ngModel)]="storeData.name">
+      </mat-form-field>
     </div>
     <div class="row clean-row">
-      <b>Last Name: </b> <input style="border-radius: 10px" type="text" name="last_name"[(ngModel)]="storeData.lastName" class="form-control mb-3">
+      <mat-form-field>
+        <mat-label style="color: black">LastName</mat-label>
+        <input matInput placeholder="lastname" [(ngModel)]="storeData.lastName">
+      </mat-form-field>
     </div>
     <div class="row clean-row">
-      <b>Email: </b> <input style="border-radius: 10px" type="text" name="email"[(ngModel)]="storeData.email" class="form-control mb-3">
+      <mat-form-field>
+        <mat-label style="color: black">Email</mat-label>
+        <input matInput placeholder="email" [(ngModel)]="storeData.email">
+      </mat-form-field>
     </div>
     <div class="row clean-row">
-      <b>Address: </b> <input style="border-radius: 10px" type="text" name="address"[(ngModel)]="storeData.address" class="form-control mb-3">
+      <mat-form-field>
+        <mat-label style="color: black">Address</mat-label>
+        <input matInput placeholder="address" [(ngModel)]="storeData.address">
+      </mat-form-field>
     </div>
     <div class="row clean-row">
-      <b>Password: </b> <input style="border-radius: 10px" type="text" name="password"[(ngModel)]="storeData.password" class="form-control mb-3">
+      <mat-form-field>
+        <mat-label style="color: black">Password</mat-label>
+        <input matInput placeholder="password" [(ngModel)]="storeData.password">
+      </mat-form-field>
     </div>
     <div class="row clean-row">
-      <b>Phone: </b> <input style="border-radius: 10px" type="text" name="phone"[(ngModel)]="storeData.phone" class="form-control mb-3">
+      <mat-form-field>
+        <mat-label style="color: black">Phone</mat-label>
+        <input matInput placeholder="phone" [(ngModel)]="storeData.phone">
+      </mat-form-field>
     </div>
+
     <div mat-dialog-actions align="center">
       <button mat-raised-button class="but" (click)="updateProfile()" [routerLink]= "['/store-profile',id]">Save</button>
     </div>
