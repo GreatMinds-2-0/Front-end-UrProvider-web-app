@@ -36,6 +36,7 @@ import { AddProductComponent } from './inventory/pages/add-product/add-product.c
 import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
+import { ProductsComponent } from './store/pages/products/products.component';
 
 
 
@@ -56,6 +57,7 @@ import { SupplierViewClientComponent } from './supplier/pages/supplier-view-clie
     StoreProfileComponent,
     StoreEditProfileComponent,
     SupplierViewClientComponent,
+    ProductsComponent,
 
   ],
   imports: [
