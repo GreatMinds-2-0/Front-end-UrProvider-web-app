@@ -2,7 +2,7 @@
   <mat-form-field class="search" appearance="fill">
     <mat-label>Search products</mat-label>
     <input matInput [(ngModel)]="searchTerm" placeholder="Search products by name"/>
-    <mat-icon matPrefix [routerLink]= "['/store-products-list', id]">search</mat-icon>
+    <mat-icon matPrefix (click)="filter()">search</mat-icon>
   </mat-form-field>
 </div>
 
@@ -14,7 +14,7 @@
 </mat-card>
 
 <h1>Favorite Providers:</h1>
-<div  class="container2">
+<div class="container2">
   <div *ngFor="let supplier of supplierData">
     <a style="text-decoration: none" [routerLink]="['/store-providers-profile', id, supplier.id]">
       <mat-card class="example-card">
