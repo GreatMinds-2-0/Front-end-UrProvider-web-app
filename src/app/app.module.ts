@@ -35,12 +35,14 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { AddProductComponent } from './inventory/pages/add-product/add-product.component';
 import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
+
 import {
   PaymentMethodDialog,
   SupplierPlanComponent
 } from './supplier/pages/supplier-plan/supplier-plan.component';
 import {MatDialogModule} from "@angular/material/dialog";
 
+import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,9 @@ import {MatDialogModule} from "@angular/material/dialog";
     ProductsSearchComponent,
     StoreProfileComponent,
     StoreEditProfileComponent,
+    SupplierViewClientComponent,
     SupplierPlanComponent,
+    SupplierViewClientComponent,
     PaymentMethodDialog
   ],
   imports: [
@@ -80,7 +84,9 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatGridListModule,
     MatDividerModule,
     MatSlideToggleModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSlideToggleModule,
+    FormsModule,
   ],
   providers: [SuppliersService, StoresService, ProductsService],
   bootstrap: [AppComponent]

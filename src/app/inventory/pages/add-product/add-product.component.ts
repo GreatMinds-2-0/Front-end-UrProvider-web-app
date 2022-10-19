@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ProductsService} from "../../services/products.service";
 import {ActivatedRoute} from "@angular/router";
 import {Product} from "../../model/product";
+import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
 
 @Component({
   selector: 'app-add-product',
@@ -15,7 +16,7 @@ export class AddProductComponent implements OnInit {
   productId?: number;
 
   constructor(private productsService: ProductsService, private route: ActivatedRoute) {
-    this.id = this.route.snapshot.paramMap.get("id");
+    this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.newProduct = {} as Product;
     this.productsList = [];
   }

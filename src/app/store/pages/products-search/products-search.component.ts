@@ -10,6 +10,7 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProductsSearchComponent implements OnInit {
 
+  searchTerm: any;
   id: any;
   products: Array<Product>;
 
@@ -19,13 +20,16 @@ export class ProductsSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.paramMap.get("id");
+
+    this.id = Number(this.route.snapshot.paramMap.get("id"));
+    this.searchTerm = this.route.snapshot.paramMap.get("search");
     this.getAllProducts();
   }
 
   getAllProducts() {
     this.productsService.getAll().subscribe((response:any)=>{
       this.products = response;
+      this.products = this.products.filter(x => x.name.toLowerCase().includes(this.searchTerm.toLowerCase()))
     })
   }
 }
