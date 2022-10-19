@@ -1,6 +1,6 @@
 
 .product-card {
-  max-width: 400px;
+  max-width: 300px;
   background-color: #DCE4FC;
   color: black;
 }
@@ -8,17 +8,20 @@
 .mt-5 {
   margin-top: 3rem !important;
 }
-
+.profile{
+  height: 200px;
+  width: 200px;
+}
 .container2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 30px;
 }
 
 .img-products {
-  height: 300px;
+  height: 200px;
   object-fit: cover;
 }
 

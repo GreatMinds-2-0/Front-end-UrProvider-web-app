@@ -3,12 +3,15 @@
     <mat-icon>arrow_back</mat-icon>
   </button>
 </div>
+<div>
+
+</div>
 <h1>Products:</h1>
 
 <div class="container2">
   <div *ngFor="let product of products">
     <div class="mt-5">
-      <mat-card class="product-card">
+      <mat-card class="product-card" [routerLink]="['/store-product',product.id]">
         <mat-card-header>
           <mat-card-title>{{ product.name }}</mat-card-title>
         </mat-card-header>
@@ -16,4 +19,9 @@
       </mat-card>
     </div>
   </div>
+</div>
+<br>
+<div>
+  <h1>Provider:</h1>
+  <img class="profile" src="{{supplierData.image}}" alt="Supplier Photo">
 </div>
