@@ -4,24 +4,41 @@
   </button>
 </div>
 <div>
-
+  <br>
 </div>
-<h1>Products:</h1>
 
-<div class="container2">
-  <div *ngFor="let product of products">
-    <div class="mt-5">
-      <mat-card class="product-card" [routerLink]="['/store-product',product.id]">
-        <mat-card-header>
-          <mat-card-title>{{ product.name }}</mat-card-title>
-        </mat-card-header>
-        <img mat-card-image class="img-products" [src]="product.image" alt="Reference product's photo">
-      </mat-card>
+<mat-grid-list cols="2" rowHeight="100%">
+  <h1>Products:</h1>
+  <mat-grid-tile >
+    <div class="grid3c">
+      <div *ngFor="let product of products">
+        <div class="mt-5">
+          <mat-card class="product-card" [routerLink]="['/store-product',product.id]">
+            <mat-card-header>
+              <mat-card-title>{{ product.name }}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image class="img-products" [src]="product.image" alt="Reference product's photo">
+          </mat-card>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </mat-grid-tile>
+  <mat-grid-tile class="left">
+    <div>
+      <h1>Provider:</h1>
+      <img class="profile" src="{{supplierData.image}}" alt="Supplier Photo">
+      <br>
+    </div>
+
+    <h2>Description:</h2>
+    <br><br>
+    <div class="down">
+      <h3>{{supplierData.description}}</h3>
+    </div>
+
+  </mat-grid-tile>
+
+</mat-grid-list>
+
 <br>
-<div>
-  <h1>Provider:</h1>
-  <img class="profile" src="{{supplierData.image}}" alt="Supplier Photo">
-</div>
+
