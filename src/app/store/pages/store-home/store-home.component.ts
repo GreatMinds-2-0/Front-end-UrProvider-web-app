@@ -42,7 +42,7 @@ export class StoreHomeComponent implements OnInit {
   getMostSellProducts(){
     this.productsService.getAll().subscribe((response:any)=>{
       this.dataProduct.data= response;
-      this.dataProduct.data=this.dataProduct.data.sort((a,b)=>(a.numberOfSales>b.numberOfSales?-1:1)).slice(0,3);
+      this.dataProduct.data=this.dataProduct.data.sort((a,b)=>(a.numberOfSales>b.numberOfSales?-1:1)).slice(0,4);
     })
   }
 

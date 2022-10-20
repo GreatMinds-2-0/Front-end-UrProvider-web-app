@@ -1,17 +1,16 @@
-import { Component, OnInit,Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import {MatTableDataSource} from "@angular/material/table";
 import {Product} from "../../../inventory/model/product";
 import {ProductsService} from "../../../inventory/services/products.service";
 import {ActivatedRoute} from "@angular/router";
-import {MatTableDataSource} from "@angular/material/table";
-import {EMPTY} from "rxjs";
 
 @Component({
-  selector: 'app-products-search',
-  templateUrl: './products-search.component.html',
-  styleUrls: ['./products-search.component.css']
+  selector: 'app-products-by-supplier',
+  templateUrl: './products-by-supplier.component.html',
+  styleUrls: ['./products-by-supplier.component.css']
 })
+export class ProductsBySupplierComponent implements OnInit {
 
-export class ProductsSearchComponent implements OnInit {
   searchTerm: any;
   id: any;
 
@@ -24,17 +23,12 @@ export class ProductsSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = Number(this.route.snapshot.paramMap.get("id"));
+    this.id = Number(this.route.snapshot.paramMap.get("pid"));
     this.searchTerm = this.route.snapshot.paramMap.get("search");
-    this.getAllProducts();
+    this.getProductsBySupplierId();
     this.applyFilterInit(  this.searchTerm );
   }
 
-  getAllProducts() {
-    this.productsService.getAll().subscribe((response:any)=>{
-      this.dataSource.data= response;
-    })
-  }
   getProductsBySupplierId(){
     this.productsService.getAll().subscribe((response:any) => {
       this.dataSource.data = response;

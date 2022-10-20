@@ -39,10 +39,12 @@ export class StoreSupplierProfileComponent implements OnInit {
   ];
   id:any;
   pid:any;
+  isVisible: boolean;
   supplierData: Supplier;
   constructor(private suppliersService: SuppliersService,
               private route: ActivatedRoute) {
     this.supplierData = {} as Supplier;
+    this.isVisible= false;
   }
 
   ngOnInit(): void {
@@ -55,6 +57,11 @@ export class StoreSupplierProfileComponent implements OnInit {
     this.suppliersService.getById(id).subscribe((response:any) => {
       this.supplierData = response;
     })
+  }
+  isVisibleProducts(){
+    if (this.isVisible===false)
+      return this.isVisible=true;
+    else return this.isVisible=false;
   }
 
 
