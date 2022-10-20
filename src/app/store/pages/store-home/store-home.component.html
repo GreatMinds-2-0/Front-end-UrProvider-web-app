@@ -27,7 +27,7 @@
 <div class="container2">
   <div *ngFor="let product of dataProduct.filteredData">
     <div class="mt-5">
-      <a style="text-decoration: none" [routerLink]="['/product-view', id, product.id]">
+      <a style="text-decoration: none" [routerLink]="['/product-view', id, product.id,product.supplierId]">
         <mat-card class="product-card">
           <mat-card-header>
             <mat-card-title>{{ product.name }}</mat-card-title>

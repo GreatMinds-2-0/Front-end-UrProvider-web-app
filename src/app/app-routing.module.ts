@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'store-edit-profile/:id', component: StoreEditProfileComponent},
   { path: 'store-home/:id', component: StoreHomeComponent},
   { path: 'store-providers-profile/:id/:pid', component: StoreSupplierProfileComponent},
-  { path: 'product-view/:id/:pid', component: ProductViewComponent},
+  { path: 'product-view/:id/:pid/:sid', component: ProductViewComponent},
   { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},/*/:id/:search*/
   { path: 'supplier/view-client/:id/:cid', component: SupplierViewClientComponent},
   { path: '', redirectTo: '/', pathMatch: 'full' },

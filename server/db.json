@@ -245,7 +245,7 @@
       "description": "Citrus fruit flavor (500 ml)",
       "id": 8,
       "numberOfSales": 112,
-      "supplierID": 1
+      "supplierId": 1
     },
     {
       "name": "Sprite soda",
@@ -255,7 +255,7 @@
       "description": "Lemon-lime flavor (600 ml)",
       "id": 9,
       "numberOfSales": 102,
-      "supplierID": 1
+      "supplierId": 1
     },
     {
       "name": "Pepsi soda",
@@ -265,7 +265,7 @@
       "description": "sugary drink and cola (500 ml)",
       "id": 10,
       "numberOfSales": 50,
-      "supplierID": 1
+      "supplierId": 1
     },
     {
       "name": "Atun Campomar",
@@ -275,7 +275,7 @@
       "description": "Campomar tuna chunks in vegetable oil (170gr can)",
       "id": 11,
       "numberOfSales": 58,
-      "supplierID": 10
+      "supplierId": 10
     },
     {
       "name": "Atun Florida",
@@ -285,7 +285,7 @@
       "description": "Florida tuna fillet in vegetable oil(170gr can)",
       "id": 12,
       "numberOfSales": 99,
-      "supplierID": 10
+      "supplierId": 10
     },
     {
       "name": "Atun Fannys",
@@ -295,7 +295,7 @@
       "description": "Fannys tuna fillet in vegetable oil (170gr can)",
       "id": 13,
       "numberOfSales": 99,
-      "supplierID": 10
+      "supplierId": 10
     },
     {
       "name": "Atun Primor",
@@ -305,7 +305,7 @@
       "description": "Primor tuna fillet in vegetable oil (170gr can)",
       "id": 14,
       "numberOfSales": 16,
-      "supplierID": 10
+      "supplierId": 10
     },
     {
       "name": "Atun Gloria",
@@ -315,7 +315,7 @@
       "description": "Gloria tuna chunks in vegetable oil (170gr can)",
       "id": 15,
       "numberOfSales": 199,
-      "supplierID": 9
+      "supplierId": 9
     },
     {
       "name": "Milk Gloria",
@@ -325,7 +325,7 @@
       "description": "Gloria Blue Milk 400 g - Can 400 g",
       "id": 16,
       "numberOfSales": 39,
-      "supplierID": 10
+      "supplierId": 10
     },
     {
       "name": "Milk Aro",
@@ -335,7 +335,7 @@
       "description": "Aro Milk 400 g with vitamin D - Can 400 g",
       "id": 17,
       "numberOfSales": 89,
-      "supplierID": 10
+      "supplierId": 10
     },
     {
       "name": "Milk Ideal",
@@ -345,7 +345,7 @@
       "description": "Ideal Milk- Can 400 g",
       "id": 18,
       "numberOfSales": 100,
-      "supplierID": 9
+      "supplierId": 9
     },
     {
       "name": "\ncasino cookie",
@@ -355,7 +355,7 @@
       "description": "vanilla cookie filled with chocolate flavor",
       "id": 19,
       "numberOfSales": 100,
-      "supplierID": 8
+      "supplierId": 8
     },
     {
       "name": "\ncasino cookie",
@@ -365,7 +365,7 @@
       "description": "vanilla cookie filled with mint flavor",
       "id": 20,
       "numberOfSales": 100,
-      "supplierID": 8
+      "supplierId": 8
     },
     {
       "name": "Potato lays",
@@ -375,7 +375,7 @@
       "description": "French fries flakes",
       "id": 21,
       "numberOfSales": 100,
-      "supplierID": 8
+      "supplierId": 8
     },
     {
       "name": "Doritos Snacks",
@@ -385,7 +385,7 @@
       "description": "Corn Chips cheese",
       "id": 22,
       "numberOfSales": 100,
-      "supplierID": 8
+      "supplierId": 8
     },
     {
       "name": "Costeño Rice",
@@ -395,7 +395,7 @@
       "description": "750 gr bag of rice",
       "id": 23,
       "numberOfSales": 100,
-      "supplierID": 10
+      "supplierId": 10
     },
     {
       "name": "Costeño Rice",
@@ -405,7 +405,7 @@
       "description": "750 gr bag of rice",
       "id": 24,
       "numberOfSales": 100,
-      "supplierID": 7
+      "supplierId": 7
     },
     {
       "name": "Caisy Rice",
@@ -415,7 +415,7 @@
       "description": "1000 gr bag of rice",
       "id": 25,
       "numberOfSales": 100,
-      "supplierID": 7
+      "supplierId": 7
     },
     {
       "name": "Dulfina sugar",
@@ -425,7 +425,7 @@
       "description": "1000 gr bag of sugar",
       "id": 26,
       "numberOfSales": 100,
-      "supplierID": 6
+      "supplierId": 6
     },
     {
       "name": "Sulga sugar",
@@ -435,7 +435,7 @@
       "description": "1000 gr bag of sugar",
       "id": 27,
       "numberOfSales": 100,
-      "supplierID": 6
+      "supplierId": 6
     },
     {
       "name": "Paisana menestras",
@@ -445,7 +445,7 @@
       "description": "Split peas in 1 kg bag",
       "id": 28,
       "numberOfSales": 100,
-      "supplierID": 6
+      "supplierId": 6
     },
     {
       "name": "Inka Grains",
@@ -455,7 +455,7 @@
       "description": "\nlentils in 1 kg bag",
       "id": 29,
       "numberOfSales": 100,
-      "supplierID": 6
+      "supplierId": 6
     },
     {
       "name": "Inka Trail",
@@ -465,7 +465,7 @@
       "description": "Canary bean in bolda of 1 kg",
       "id": 30,
       "numberOfSales": 100,
-      "supplierID": 7
+      "supplierId": 7
     },
     {
       "name": "San luis water",
@@ -475,7 +475,7 @@
       "description": "600ml bottled water",
       "id": 31,
       "numberOfSales": 100,
-      "supplierID": 4
+      "supplierId": 4
     },
     {
       "name": "San Mateo water",
@@ -485,7 +485,7 @@
       "description": "600ml bottled water",
       "id": 32,
       "numberOfSales": 100,
-      "supplierID": 4
+      "supplierId": 4
     },
     {
       "name": "\nNoodles Don Vittorio",
@@ -495,7 +495,7 @@
       "description": "Spaghetti bag 1kg",
       "id": 33,
       "numberOfSales": 100,
-      "supplierID": 5
+      "supplierId": 5
     },
     {
       "name": "Molitalia spaghetti",
@@ -505,7 +505,7 @@
       "description": "Spaghetti bag 1kg",
       "id": 34,
       "numberOfSales": 100,
-      "supplierID": 5
+      "supplierId": 5
     },
     {
       "name": "Noodles Lavaggi",
@@ -515,7 +515,7 @@
       "description": "Noodles bag 500gr",
       "id": 35,
       "numberOfSales": 100,
-      "supplierID": 5
+      "supplierId": 5
     },
     {
       "name": "Facundo beans",
@@ -525,7 +525,7 @@
       "description": "\ncanned lentils",
       "id": 36,
       "numberOfSales": 100,
-      "supplierID": 9
+      "supplierId": 9
     },
     {
       "name": "Santys",
@@ -535,7 +535,7 @@
       "description": "\ncanned mushrooms",
       "id": 37,
       "numberOfSales": 100,
-      "supplierID": 9
+      "supplierId": 9
     }
   ]
 }
