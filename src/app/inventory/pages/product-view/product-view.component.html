@@ -1,0 +1,19 @@
+
+
+<div class="container2">
+  <div >
+    <div class="mt-5">
+
+        <mat-card class="product-card">
+          <mat-card-header>
+            <mat-card-title>{{ productData.name}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image class="img-products" [src]="productData.image" alt="Reference product's photo">
+          <mat-card-content>
+            <p><b>Category:</b> {{ productData.category }}</p>
+            <p><b>Description:</b> {{ productData.description }}</p>
+          </mat-card-content>
+        </mat-card>
+    </div>
+  </div>
+</div>

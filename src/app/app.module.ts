@@ -38,6 +38,7 @@ import { ProductsSearchComponent } from './store/pages/products-search/products-
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
 import { SuppliersSearchComponent } from './store/pages/suppliers-search/suppliers-search.component';
 import {MatDialogModule} from "@angular/material/dialog";
+import { ProductViewComponent } from './inventory/pages/product-view/product-view.component';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import {MatDialogModule} from "@angular/material/dialog";
     StoreEditProfileComponent,
     SupplierViewClientComponent,
     SuppliersSearchComponent,
+    ProductViewComponent,
 
 
   ],

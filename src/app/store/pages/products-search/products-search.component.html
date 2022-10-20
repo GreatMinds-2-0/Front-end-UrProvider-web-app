@@ -9,6 +9,7 @@
 <div class="container2">
   <div *ngFor="let product of dataSource.filteredData">
     <div class="mt-5">
+      <a style="text-decoration: none" [routerLink]="['/product-view', id, product.id]">
       <mat-card class="product-card">
         <mat-card-header>
           <mat-card-title>{{ product.name }}</mat-card-title>
@@ -21,6 +22,7 @@
           <p><b>Description:</b> {{ product.description }}</p>
         </mat-card-content>
       </mat-card>
+      </a>>
     </div>
   </div>
 </div>
