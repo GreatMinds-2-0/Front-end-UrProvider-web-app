@@ -1,4 +1,4 @@
-.mat-card img {
+.img-store {
   display: flex;
   object-fit: cover;
   height: 140px;
@@ -9,7 +9,6 @@
 
 .search {
   width: 100%;
-
   background-color: #5598c3;
   color: black;
   border-radius: 10px;
@@ -41,48 +40,33 @@
   background-size: cover;
 }
 
-.container{
-  display: inline-block;
-  text-align: left;
-}
 
 
 
-mat-card{
-  border: black solid 3px;
-}
 
-mat-card-header{
-  border: black solid 3px;
-}
 
-.example-card {
-  color: black;
-  background-color: transparent;
-  box-shadow: none;
-  margin-left: 10px;
-  width: 200px;
-}
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
 
 .container2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
-.game-name {
-  font-size: 1rem;
-  color: black;
-  display: flex;
-  justify-content: center;
-  margin-top:1rem
+.img-products {
+  height: 300px ;
+  object-fit: cover ;
 }
+
+.product-card {
+  max-width: 300px;
+  min-width: 300px;
+  background-color: #DCE4FC;
+  color: black;
+}
+
 
 .img-home {
   object-fit: cover;

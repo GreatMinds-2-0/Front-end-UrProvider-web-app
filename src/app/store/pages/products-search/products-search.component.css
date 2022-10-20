@@ -4,7 +4,8 @@
 }
 .mat-form-field {
   width: 100%;
-    background-color: #5598c3;
+
+  background-color: #5598c3;
   color: black;
   border-radius: 10px;
 }
@@ -49,12 +50,4 @@
   background-color: #DCE4FC;
   text-align: center;
 }
-.example-card {
-  padding-left: 105px;
-}
-
-
-
-
-
 

@@ -11,7 +11,7 @@
   <mat-card-content>
     <div id="content">
       <div class="logo">
-        <img src="{{storeData.image}}" alt="">
+        <img class="img-store" src="{{storeData.image}}" alt="">
       </div>
 
       <div class="menu">
@@ -22,7 +22,29 @@
 
   </mat-card-content>
 </mat-card>
-<h1>Favorite Products:</h1>
+<h1>Best selling product:</h1>
+{{dataProduct.data.length}}
+<div class="container2">
+  <div *ngFor="let product of dataProduct.filteredData">
+    <div class="mt-5">
+      <a style="text-decoration: none" [routerLink]="['/product-view', id, product.id]">
+        <mat-card class="product-card">
+          <mat-card-header>
+            <mat-card-title>{{ product.name }}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image class="img-products" [src]="product.image" alt="Reference product's photo">
+          <mat-card-content>
+            <p><b>Category:</b> {{ product.category }}</p>
+            <p *ngIf="product.available == true"><b>Available:</b> Yes</p>
+            <p *ngIf="product.available == false"><b>Available:</b> No</p>
+            <p><b>Description:</b> {{ product.description }}</p>
+            <p><b>Sales:</b> {{ product.numberOfSales }}</p>
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </div>
+  </div>
+</div>
 
 <h1>Favorite Providers:</h1>
 <app-suppliers-search></app-suppliers-search>

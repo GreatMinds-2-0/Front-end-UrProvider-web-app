@@ -20,6 +20,8 @@ export class StoreHomeComponent implements OnInit {
   storeData: Store;
   supplierData: Array<Supplier>;
 
+  dataProduct = new MatTableDataSource<Product>;
+
   constructor(private router: Router,
               private suppliersService: SuppliersService,
               private productsService: ProductsService,
@@ -27,12 +29,21 @@ export class StoreHomeComponent implements OnInit {
               private storesService: StoresService) {
     this.supplierData = [];
     this.storeData = {} as Store;
+
   }
 
   ngOnInit(): void {
     this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.getSupplier();
     this.getStoreById(this.id);
+    this.getMostSellProducts();
+
+  }
+  getMostSellProducts(){
+    this.productsService.getAll().subscribe((response:any)=>{
+      this.dataProduct.data= response;
+      this.dataProduct.data=this.dataProduct.data.sort((a,b)=>(a.numberOfSales>b.numberOfSales?-1:1)).slice(0,3);
+    })
   }
 
   getSupplier() {

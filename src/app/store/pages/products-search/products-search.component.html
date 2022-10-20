@@ -1,10 +1,11 @@
-
+<mat-card-header>
   <mat-form-field  appearance="standard">
     <mat-label>Search products</mat-label>
-    <input matInput value="{{searchTerm}}" style="color: #3F51B5" (keyup)="applyFilter($event)" placeholder="Search your products"  #input>
     <mat-icon matPrefix >search</mat-icon>
-  </mat-form-field>
+    <input matInput value="{{searchTerm}}" style="color: #3F51B5" (keyup)="applyFilter($event)" placeholder="Search your products"  #input>
 
+  </mat-form-field>
+</mat-card-header>
 
 <div class="container2">
   <div *ngFor="let product of dataSource.filteredData">
@@ -22,7 +23,7 @@
           <p><b>Description:</b> {{ product.description }}</p>
         </mat-card-content>
       </mat-card>
-      </a>>
+      </a>
     </div>
   </div>
 </div>

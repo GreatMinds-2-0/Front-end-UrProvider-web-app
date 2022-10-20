@@ -184,6 +184,7 @@
       "available": true,
       "description": "Purple corn drink (600 ml)",
       "supplierId": 1,
+      "numberOfSales": 100,
       "id": 1
     },
     {
@@ -193,6 +194,7 @@
       "available": true,
       "description": "Orange flavoured soda (600 ml)",
       "supplierId": 1,
+      "numberOfSales": 115,
       "id": 2
     },
     {
@@ -202,6 +204,7 @@
       "available": true,
       "description": "Wireless bluetooth JBL speaker",
       "supplierId": 2,
+      "numberOfSales": 120,
       "id": 3
     },
     {
@@ -211,6 +214,7 @@
       "available": false,
       "description": "Cool flying robot ",
       "supplierId": 2,
+      "numberOfSales": 110,
       "id": 4
     },
     {
@@ -220,6 +224,7 @@
       "available": true,
       "description": "robot vacuum cleaner",
       "supplierId": 2,
+      "numberOfSales": 113,
       "id": 6
     },
     {
@@ -229,6 +234,7 @@
       "available": true,
       "description": "Yellow flavoured soda (600 ml)",
       "supplierId": 1,
+      "numberOfSales": 107,
       "id": 7
     },
     {
@@ -238,6 +244,7 @@
       "available": true,
       "description": "Citrus fruit flavor (500 ml)",
       "id": 8,
+      "numberOfSales": 112,
       "supplierID": 1
     },
     {
@@ -247,6 +254,7 @@
       "available": true,
       "description": "Lemon-lime flavor (600 ml)",
       "id": 9,
+      "numberOfSales": 102,
       "supplierID": 1
     },
     {
@@ -256,6 +264,7 @@
       "available": true,
       "description": "sugary drink and cola (500 ml)",
       "id": 10,
+      "numberOfSales": 50,
       "supplierID": 1
     },
     {
@@ -265,6 +274,7 @@
       "available": true,
       "description": "Campomar tuna chunks in vegetable oil (170gr can)",
       "id": 11,
+      "numberOfSales": 58,
       "supplierID": 10
     },
     {
@@ -274,6 +284,7 @@
       "available": true,
       "description": "Florida tuna fillet in vegetable oil(170gr can)",
       "id": 12,
+      "numberOfSales": 99,
       "supplierID": 10
     },
     {
@@ -283,6 +294,7 @@
       "available": true,
       "description": "Fannys tuna fillet in vegetable oil (170gr can)",
       "id": 13,
+      "numberOfSales": 99,
       "supplierID": 10
     },
     {
@@ -292,6 +304,7 @@
       "available": true,
       "description": "Primor tuna fillet in vegetable oil (170gr can)",
       "id": 14,
+      "numberOfSales": 16,
       "supplierID": 10
     },
     {
@@ -301,6 +314,7 @@
       "available": true,
       "description": "Gloria tuna chunks in vegetable oil (170gr can)",
       "id": 15,
+      "numberOfSales": 199,
       "supplierID": 9
     },
     {
@@ -310,6 +324,7 @@
       "available": true,
       "description": "Gloria Blue Milk 400 g - Can 400 g",
       "id": 16,
+      "numberOfSales": 39,
       "supplierID": 10
     },
     {
@@ -319,6 +334,7 @@
       "available": true,
       "description": "Aro Milk 400 g with vitamin D - Can 400 g",
       "id": 17,
+      "numberOfSales": 89,
       "supplierID": 10
     },
     {
@@ -328,6 +344,7 @@
       "available": true,
       "description": "Ideal Milk- Can 400 g",
       "id": 18,
+      "numberOfSales": 100,
       "supplierID": 9
     },
     {
@@ -337,6 +354,7 @@
       "available": true,
       "description": "vanilla cookie filled with chocolate flavor",
       "id": 19,
+      "numberOfSales": 100,
       "supplierID": 8
     },
     {
@@ -346,6 +364,7 @@
       "available": true,
       "description": "vanilla cookie filled with mint flavor",
       "id": 20,
+      "numberOfSales": 100,
       "supplierID": 8
     },
     {
@@ -355,6 +374,7 @@
       "available": true,
       "description": "French fries flakes",
       "id": 21,
+      "numberOfSales": 100,
       "supplierID": 8
     },
     {
@@ -364,6 +384,7 @@
       "available": true,
       "description": "Corn Chips cheese",
       "id": 22,
+      "numberOfSales": 100,
       "supplierID": 8
     },
     {
@@ -373,6 +394,7 @@
       "available": true,
       "description": "750 gr bag of rice",
       "id": 23,
+      "numberOfSales": 100,
       "supplierID": 10
     },
     {
@@ -382,6 +404,7 @@
       "available": true,
       "description": "750 gr bag of rice",
       "id": 24,
+      "numberOfSales": 100,
       "supplierID": 7
     },
     {
@@ -391,6 +414,7 @@
       "available": true,
       "description": "1000 gr bag of rice",
       "id": 25,
+      "numberOfSales": 100,
       "supplierID": 7
     },
     {
@@ -400,6 +424,7 @@
       "available": true,
       "description": "1000 gr bag of sugar",
       "id": 26,
+      "numberOfSales": 100,
       "supplierID": 6
     },
     {
@@ -409,6 +434,7 @@
       "available": true,
       "description": "1000 gr bag of sugar",
       "id": 27,
+      "numberOfSales": 100,
       "supplierID": 6
     },
     {
@@ -418,6 +444,7 @@
       "available": true,
       "description": "Split peas in 1 kg bag",
       "id": 28,
+      "numberOfSales": 100,
       "supplierID": 6
     },
     {
@@ -427,6 +454,7 @@
       "available": true,
       "description": "\nlentils in 1 kg bag",
       "id": 29,
+      "numberOfSales": 100,
       "supplierID": 6
     },
     {
@@ -436,6 +464,7 @@
       "available": true,
       "description": "Canary bean in bolda of 1 kg",
       "id": 30,
+      "numberOfSales": 100,
       "supplierID": 7
     },
     {
@@ -445,6 +474,7 @@
       "available": true,
       "description": "600ml bottled water",
       "id": 31,
+      "numberOfSales": 100,
       "supplierID": 4
     },
     {
@@ -454,6 +484,7 @@
       "available": true,
       "description": "600ml bottled water",
       "id": 32,
+      "numberOfSales": 100,
       "supplierID": 4
     },
     {
@@ -463,6 +494,7 @@
       "available": true,
       "description": "Spaghetti bag 1kg",
       "id": 33,
+      "numberOfSales": 100,
       "supplierID": 5
     },
     {
@@ -472,6 +504,7 @@
       "available": true,
       "description": "Spaghetti bag 1kg",
       "id": 34,
+      "numberOfSales": 100,
       "supplierID": 5
     },
     {
@@ -481,6 +514,7 @@
       "available": true,
       "description": "Noodles bag 500gr",
       "id": 35,
+      "numberOfSales": 100,
       "supplierID": 5
     },
     {
@@ -490,6 +524,7 @@
       "available": true,
       "description": "\ncanned lentils",
       "id": 36,
+      "numberOfSales": 100,
       "supplierID": 9
     },
     {
@@ -499,6 +534,7 @@
       "available": true,
       "description": "\ncanned mushrooms",
       "id": 37,
+      "numberOfSales": 100,
       "supplierID": 9
     }
   ]
