@@ -46,5 +46,8 @@ export class StoreHomeComponent implements OnInit {
       this.storeData=response;
     })
   }
+  filter(){
+    this.router.navigate([`./store-products-list/${this.id}/${this.searchTerm}`]);
+  }
 
 }
