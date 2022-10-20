@@ -4,41 +4,79 @@
   </button>
 </div>
 <div class="container1">
-  <div class="side left">
-    <h1>Provider:</h1>
-    <img src="{{supplierDatas.image}}">
+  <div class="ng-start-inserted">
+    <div class="mt-5">
+
+    </div>
   </div>
-  <div class="side right" >
-    <h1>{{supplierDatas.description}}</h1>
+<div class="ng-start-inserted">
+  <div class="mt-5">
+    <mat-card class="product-card">
+      <mat-card-title>Provider:</mat-card-title>
+      <img mat-card-image class="img-supplier" src="{{supplierData.image}}">
+    </mat-card>
+
   </div>
 </div>
-<br>
-<div class="container2" >
-  <div class="side left2">
-    <div class="star-rating-container star-rating-animation" fxLayout="row" fxLayoutAlign="start center" >
-      <h1>Rating:</h1>
-      <div *ngFor="let star of stars" [ngClass]="[star.class]" (click)="selectStar(star.id)">
-        <mat-icon>{{star.icon}}</mat-icon>
+  <div class="ng-start-inserted" >
+    <div class="mt-5">
+      <mat-card class="product-card">
+        <mat-card-content>
+          <mat-card-title>Description:</mat-card-title>
+          <mat-card-content><p>{{supplierData.description}}</p></mat-card-content>
+        </mat-card-content>
+
+      </mat-card>
+    </div>
+  </div>
+  <div class="ng-start-inserted" >
+    <div class="mt-5">
+      <div class="star-rating-container star-rating-animation" fxLayout="row" fxLayoutAlign="start center" >
+        <h1>Rating:</h1>
+        <div *ngFor="let star of stars" [ngClass]="[star.class]" (click)="selectStar(star.id)">
+          <mat-icon>{{star.icon}}</mat-icon>
+        </div>
       </div>
     </div>
   </div>
-  <div class="side right2">
-    <button mat-raised-button color="primary" class="center"><h1>Products</h1></button>
+  <div class="ng-start-inserted" >
+    <div class="mt-5">
+      <button  mat-raised-button color="primary" class="center" (click)="isVisibleProducts()" ><h1>Products</h1></button>
+    </div>
+  </div>
+  <div class="ng-start-inserted" >
+    <div class="mt-5">
+      <button mat-fab color="primary" (click)="updateLikes()" >
+
+        <mat-icon>favorite</mat-icon>
+      </button>
+       {{supplierData.likes}}
+    </div>
   </div>
 </div>
+<br>
 <div>
-  <h1>Comments:</h1>
-  <div class="comments">
-    <h2> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h2>
-    <mat-paginator [length]="100"
-                   [pageSize]="1"
-                   [pageSizeOptions]="[1, 5, 15, 25]"
-                   aria-label="Select page">
-    </mat-paginator>
+  <mat-card>
+    <h1>Comments:</h1>
+    <div class="comments">
+      <h2> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h2>
+      <mat-paginator [length]="100"
+                     [pageSize]="1"
+                     [pageSizeOptions]="[1, 5, 15, 25]"
+                     aria-label="Select page">
+      </mat-paginator>
 
-  </div>
+    </div>
+  </mat-card>
+
 </div>
 
+<div class="left3" *ngIf="isVisible===true">
+
+  <app-products-by-supplier>
+
+  </app-products-by-supplier>
+</div>

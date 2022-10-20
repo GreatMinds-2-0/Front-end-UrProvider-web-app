@@ -1,8 +1,16 @@
-<h1 class="header">Products</h1>
+<mat-card-header>
+  <mat-form-field  appearance="standard">
+    <mat-label>Search products</mat-label>
+    <mat-icon matPrefix >search</mat-icon>
+    <input matInput value="{{searchTerm}}" style="color: #3F51B5" (keyup)="applyFilter($event)" placeholder="Search your products"  #input>
+
+  </mat-form-field>
+</mat-card-header>
 
 <div class="container2">
-  <div *ngFor="let product of products">
+  <div *ngFor="let product of dataSource.filteredData">
     <div class="mt-5">
+      <a style="text-decoration: none" [routerLink]="['/product-view', id, product.id,product.supplierId]">
       <mat-card class="product-card">
         <mat-card-header>
           <mat-card-title>{{ product.name }}</mat-card-title>
@@ -15,14 +23,13 @@
           <p><b>Description:</b> {{ product.description }}</p>
         </mat-card-content>
       </mat-card>
+      </a>
     </div>
   </div>
 </div>
 
 <div align="center">
   <div class="example-button-container">
-    <button mat-mini-fab class="back-button" aria-label="Back icon button" [routerLink]="['/store-home', id]">
-      <mat-icon>arrow_back</mat-icon>
-    </button>
+
   </div>
 </div>

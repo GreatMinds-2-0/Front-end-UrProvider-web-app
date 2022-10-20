@@ -19,7 +19,9 @@ export class StoreHomeComponent implements OnInit {
   id: any;
   storeData: Store;
   supplierData: Array<Supplier>;
-  dataSource: MatTableDataSource<any> = new MatTableDataSource<Product>()
+
+  dataProduct = new MatTableDataSource<Product>;
+  dataSupplier = new MatTableDataSource<Supplier>;
 
   constructor(private router: Router,
               private suppliersService: SuppliersService,
@@ -28,13 +30,28 @@ export class StoreHomeComponent implements OnInit {
               private storesService: StoresService) {
     this.supplierData = [];
     this.storeData = {} as Store;
+
   }
 
   ngOnInit(): void {
     this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.getSupplier();
     this.getStoreById(this.id);
-    this.getAllProducts();
+    this.getMostSellProducts();
+    this.getMoreLikedSuppliers();
+
+  }
+  getMostSellProducts(){
+    this.productsService.getAll().subscribe((response:any)=>{
+      this.dataProduct.data= response;
+      this.dataProduct.data=this.dataProduct.data.sort((a,b)=>(a.numberOfSales>b.numberOfSales?-1:1)).slice(0,4);
+    })
+  }
+  getMoreLikedSuppliers(){
+    this.suppliersService.getAll().subscribe((response:any)=>{
+      this.dataSupplier.data= response;
+      this.dataSupplier.data=this.dataSupplier.data.sort((a,b)=>(a.likes>b.likes?-1:1)).slice(0,4);
+    })
   }
 
   getSupplier() {
@@ -48,14 +65,8 @@ export class StoreHomeComponent implements OnInit {
       this.storeData=response;
     })
   }
-
-  getAllProducts() {
-    this.productsService.getAll().subscribe((response:any)=>{
-      this.dataSource = response;
-    })
-  }
-
   filter(){
     this.router.navigate([`./store-products-list/${this.id}/${this.searchTerm}`]);
   }
+
 }

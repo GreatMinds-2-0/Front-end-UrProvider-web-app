@@ -11,4 +11,5 @@ export interface Supplier {
   description: string;
   phone: string;
   address: string;
+  likes: number;
 }

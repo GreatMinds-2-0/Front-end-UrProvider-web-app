@@ -6,4 +6,5 @@ export interface Product {
   image: string;
   available: boolean;
   description: string;
+  numberOfSales:number;
 }

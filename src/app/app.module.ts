@@ -36,6 +36,11 @@ import { AddProductComponent } from './inventory/pages/add-product/add-product.c
 import {ProductsService} from "./inventory/services/products.service";
 import { ProductsSearchComponent } from './store/pages/products-search/products-search.component';
 import { SupplierViewClientComponent } from './supplier/pages/supplier-view-client/supplier-view-client.component';
+import { SuppliersSearchComponent } from './store/pages/suppliers-search/suppliers-search.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import { ProductViewComponent } from './inventory/pages/product-view/product-view.component';
+import { ProductsBySupplierComponent } from './store/pages/products-by-supplier/products-by-supplier.component';
+
 import {
   PaymentMethodDialog,
   SupplierPlanComponent
@@ -59,6 +64,10 @@ import {MatDialogModule} from "@angular/material/dialog";
     StoreProfileComponent,
     StoreEditProfileComponent,
     SupplierViewClientComponent,
+    SuppliersSearchComponent,
+    ProductViewComponent,
+    ProductsBySupplierComponent,
+
 
     SupplierPlanComponent,
     SupplierViewClientComponent,
@@ -84,6 +93,7 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatGridListModule,
     MatDividerModule,
     MatSlideToggleModule,
+    FormsModule,
     FormsModule,
     MatSlideToggleModule,
     MatDialogModule

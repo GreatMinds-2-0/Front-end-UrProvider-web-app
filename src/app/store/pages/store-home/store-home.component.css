@@ -1,16 +1,42 @@
-.mat-card img {
+.img-store {
   display: flex;
   object-fit: cover;
-  height: 140px;
-  width: 160px;
-  margin-left: 20px;
-}
+  max-width: 200px;
+  min-width: 100px;
 
+  border-radius: 15px;
+}
+.title-card{
+  max-width: 300px ;
+  min-width: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #457B9D;
+}
 .search {
   width: 100%;
+  background-color: #5598c3;
+  color: black;
+  border-radius: 10px;
+}
+.content {
+ height: 140px;
+  width: 100%;
+
 }
 
+.menu, .logo {
+  width: 50%;
+}
+.menu {
+  float: right;
+  font-size: x-large;
+}
+.logo {
+  float: right;
+}
 .homecard {
+  overflow:auto;
   padding-top: calc(10rem - 4.5rem);
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(10, 86, 140, 0.5) 0%,
@@ -21,53 +47,33 @@
   background-size: cover;
 }
 
-.container{
-  display: inline-block;
-  text-align: left;
-  height: auto;
-}
 
-img {
-  object-fit: none;
-  width: 99vw;
-  height: 300px;
-}
 
-mat-card{
-  border: black solid 3px;
-}
 
-mat-card-header{
-  border: black solid 3px;
-}
 
-.example-card {
-  color: black;
-  background-color: transparent;
-  box-shadow: none;
-  margin-left: 10px;
-  width: 200px;
-}
 
-.flex {
-  display: flex;
-  justify-content: center;
-}
+
 
 .container2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
 
-.game-name {
-  font-size: 1rem;
-  color: black;
-  display: flex;
-  justify-content: center;
-  margin-top:1rem
+.img-products {
+  height: 200px ;
+  object-fit: cover ;
 }
+
+.product-card {
+  max-width: 300px;
+
+  background-color: #DCE4FC;
+  color: black;
+}
+
 
 .img-home {
   object-fit: cover;

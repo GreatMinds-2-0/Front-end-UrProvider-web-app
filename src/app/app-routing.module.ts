@@ -12,6 +12,7 @@ import {ProductsSearchComponent} from "./store/pages/products-search/products-se
 import {StoreProfileComponent} from "./store/pages/store-profile/store-profile.component";
 import {StoreEditProfileComponent} from "./store/pages/store-edit-profile/store-edit-profile.component";
 import {SupplierViewClientComponent} from "./supplier/pages/supplier-view-client/supplier-view-client.component";
+import {ProductViewComponent} from "./inventory/pages/product-view/product-view.component";
 import {PaymentMethodDialog, SupplierPlanComponent} from "./supplier/pages/supplier-plan/supplier-plan.component";
 import {MAT_DIALOG_DEFAULT_OPTIONS} from "@angular/material/dialog";
 
@@ -29,9 +30,8 @@ const routes: Routes = [
   { path: 'store-edit-profile/:id', component: StoreEditProfileComponent},
   { path: 'store-home/:id', component: StoreHomeComponent},
   { path: 'store-providers-profile/:id/:pid', component: StoreSupplierProfileComponent},
-  { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},
-  { path: 'supplier/view-client/:id/:cid', component: SupplierViewClientComponent},
-  { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},
+  { path: 'product-view/:id/:pid/:sid', component: ProductViewComponent},
+  { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},/*/:id/:search*/
   { path: 'supplier/view-client/:id/:cid', component: SupplierViewClientComponent},
   { path: '', redirectTo: '/', pathMatch: 'full' },
 ];

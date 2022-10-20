@@ -38,24 +38,37 @@ export class StoreSupplierProfileComponent implements OnInit {
     }
   ];
   id:any;
-  supplierDatas: Supplier;
+  pid:any;
+  isVisible: boolean;
+
+  supplierData: Supplier;
   constructor(private suppliersService: SuppliersService,
               private route: ActivatedRoute) {
-    this.supplierDatas = {} as Supplier;
+    this.supplierData = {} as Supplier;
+    this.isVisible= false;
   }
 
   ngOnInit(): void {
+    this.pid = Number(this.route.snapshot.paramMap.get("pid"));
+    this.getSupplierById(Number(this.pid));
     this.id = Number(this.route.snapshot.paramMap.get("id"));
-    this.getSupplierById(Number(this.id));
   }
 
   getSupplierById(id: number) {
     this.suppliersService.getById(id).subscribe((response:any) => {
-      this.supplierDatas = response;
+      this.supplierData = response;
     })
   }
+  isVisibleProducts(){
+    if (this.isVisible===false)
+      return this.isVisible=true;
+    else return this.isVisible=false;
+  }
+  updateLikes(){
 
-
+    this.supplierData.likes=this.supplierData.likes+1;
+    this.suppliersService.update(this.supplierData.id,this.supplierData).subscribe();
+  }
   selectStar(value: number): void{
 
     // prevent multiple selection
