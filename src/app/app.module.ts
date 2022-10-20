@@ -40,13 +40,10 @@ import { SuppliersSearchComponent } from './store/pages/suppliers-search/supplie
 import {MatDialogModule} from "@angular/material/dialog";
 import { ProductViewComponent } from './inventory/pages/product-view/product-view.component';
 import { ProductsBySupplierComponent } from './store/pages/products-by-supplier/products-by-supplier.component';
-
 import {
   PaymentMethodDialog,
   SupplierPlanComponent
 } from './supplier/pages/supplier-plan/supplier-plan.component';
-import {MatDialogModule} from "@angular/material/dialog";
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -94,9 +91,9 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatDividerModule,
     MatSlideToggleModule,
     FormsModule,
-    FormsModule,
     MatSlideToggleModule,
     MatDialogModule
+
   ],
   providers: [SuppliersService, StoresService, ProductsService],
   bootstrap: [AppComponent]

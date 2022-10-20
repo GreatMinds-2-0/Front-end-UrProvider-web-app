@@ -32,6 +32,7 @@ const routes: Routes = [
   { path: 'store-providers-profile/:id/:pid', component: StoreSupplierProfileComponent},
   { path: 'product-view/:id/:pid/:sid', component: ProductViewComponent},
   { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},/*/:id/:search*/
+  { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},
   { path: 'supplier/view-client/:id/:cid', component: SupplierViewClientComponent},
   { path: '', redirectTo: '/', pathMatch: 'full' },
 ];
