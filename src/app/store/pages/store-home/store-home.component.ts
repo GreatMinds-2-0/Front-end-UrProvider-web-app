@@ -21,6 +21,7 @@ export class StoreHomeComponent implements OnInit {
   supplierData: Array<Supplier>;
 
   dataProduct = new MatTableDataSource<Product>;
+  dataSupplier = new MatTableDataSource<Supplier>;
 
   constructor(private router: Router,
               private suppliersService: SuppliersService,
@@ -37,12 +38,19 @@ export class StoreHomeComponent implements OnInit {
     this.getSupplier();
     this.getStoreById(this.id);
     this.getMostSellProducts();
+    this.getMoreLikedSuppliers();
 
   }
   getMostSellProducts(){
     this.productsService.getAll().subscribe((response:any)=>{
       this.dataProduct.data= response;
       this.dataProduct.data=this.dataProduct.data.sort((a,b)=>(a.numberOfSales>b.numberOfSales?-1:1)).slice(0,4);
+    })
+  }
+  getMoreLikedSuppliers(){
+    this.suppliersService.getAll().subscribe((response:any)=>{
+      this.dataSupplier.data= response;
+      this.dataSupplier.data=this.dataSupplier.data.sort((a,b)=>(a.likes>b.likes?-1:1)).slice(0,4);
     })
   }
 

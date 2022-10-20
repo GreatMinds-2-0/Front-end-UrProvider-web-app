@@ -65,6 +65,7 @@ export class StoreSupplierProfileComponent implements OnInit {
   }
 
 
+
   selectStar(value: number): void{
 
     // prevent multiple selection

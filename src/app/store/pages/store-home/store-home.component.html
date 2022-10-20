@@ -23,7 +23,6 @@
   </mat-card-content>
 </mat-card>
 <h1>Best selling product:</h1>
-{{dataProduct.data.length}}
 <div class="container2">
   <div *ngFor="let product of dataProduct.filteredData">
     <div class="mt-5">
@@ -47,6 +46,24 @@
 </div>
 
 <h1>Favorite Providers:</h1>
-<app-suppliers-search></app-suppliers-search>
+<div class="container2">
+  <div *ngFor="let supplier of dataSupplier.filteredData">
+    <div class="mt-5">
+      <a style="text-decoration: none" [routerLink]="['/store-providers-profile', id, supplier.id]">
+        <mat-card class="product-card">
+          <mat-card-header>
+            <mat-card-title>{{ supplier.name }}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image class="img-products" [src]="supplier.image" alt="Reference product's photo">
+          <mat-card-content>
+            <p><b>Category:</b> {{ supplier.category }}</p>
+            <p><b>Description:</b> {{ supplier.description }}</p>
+            <p><b>Likes:</b> {{ supplier.likes }}</p>
+          </mat-card-content>
+        </mat-card>
+      </a>
+    </div>
+  </div>
+</div>
 
 
