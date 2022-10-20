@@ -40,6 +40,7 @@ export class StoreSupplierProfileComponent implements OnInit {
   id:any;
   pid:any;
   isVisible: boolean;
+
   supplierData: Supplier;
   constructor(private suppliersService: SuppliersService,
               private route: ActivatedRoute) {
@@ -63,9 +64,11 @@ export class StoreSupplierProfileComponent implements OnInit {
       return this.isVisible=true;
     else return this.isVisible=false;
   }
+  updateLikes(){
 
-
-
+    this.supplierData.likes=this.supplierData.likes+1;
+    this.suppliersService.update(this.supplierData.id,this.supplierData).subscribe();
+  }
   selectStar(value: number): void{
 
     // prevent multiple selection

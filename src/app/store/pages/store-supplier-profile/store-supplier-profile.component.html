@@ -41,7 +41,16 @@
   </div>
   <div class="ng-start-inserted" >
     <div class="mt-5">
-      <button mat-raised-button color="primary" class="center" (click)="isVisibleProducts()" ><h1>Products</h1></button>
+      <button  mat-raised-button color="primary" class="center" (click)="isVisibleProducts()" ><h1>Products</h1></button>
+    </div>
+  </div>
+  <div class="ng-start-inserted" >
+    <div class="mt-5">
+      <button mat-fab color="primary" (click)="updateLikes()" >
+
+        <mat-icon>favorite</mat-icon>
+      </button>
+       {{supplierData.likes}}
     </div>
   </div>
 </div>

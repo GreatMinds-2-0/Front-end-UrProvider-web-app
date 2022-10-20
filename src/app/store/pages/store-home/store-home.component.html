@@ -22,7 +22,11 @@
 
   </mat-card-content>
 </mat-card>
-<h1>Best selling product:</h1>
+
+<mat-card class="title-card">
+  <mat-card-title>Best selling product:</mat-card-title>
+</mat-card>
+
 <div class="container2">
   <div *ngFor="let product of dataProduct.filteredData">
     <div class="mt-5">
@@ -45,7 +49,9 @@
   </div>
 </div>
 
-<h1>Favorite Providers:</h1>
+<mat-card class="title-card">
+  <mat-card-title>Favorite Providers:</mat-card-title>
+</mat-card>
 <div class="container2">
   <div *ngFor="let supplier of dataSupplier.filteredData">
     <div class="mt-5">

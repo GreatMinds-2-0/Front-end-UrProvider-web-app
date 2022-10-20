@@ -28,6 +28,9 @@ export class ProductsBySupplierComponent implements OnInit {
     this.getProductsBySupplierId();
     this.applyFilterInit(  this.searchTerm );
   }
+  getTotalProducts(){
+    return this.dataSource.data.length;
+  }
 
   getProductsBySupplierId(){
     this.productsService.getAll().subscribe((response:any) => {
