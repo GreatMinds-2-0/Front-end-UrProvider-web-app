@@ -13,9 +13,12 @@ import {StoreProfileComponent} from "./store/pages/store-profile/store-profile.c
 import {StoreEditProfileComponent} from "./store/pages/store-edit-profile/store-edit-profile.component";
 import {SupplierViewClientComponent} from "./supplier/pages/supplier-view-client/supplier-view-client.component";
 import {ProductViewComponent} from "./inventory/pages/product-view/product-view.component";
+import {PaymentMethodDialog, SupplierPlanComponent} from "./supplier/pages/supplier-plan/supplier-plan.component";
+import {MAT_DIALOG_DEFAULT_OPTIONS} from "@angular/material/dialog";
 
 const routes: Routes = [
   { path: 'supplier-home/:id', component: SupplierHomeComponent },
+  {path:'supplier-plan/:id',component:SupplierPlanComponent},
   { path: 'supplier-inventory/:id', component: InventoryComponent },
   { path: 'supplier-profile/:id', component: SupplierProfileComponent},
   { path: 'supplier-profile-edit/:id', component: SupplierEditProfileComponent},
@@ -29,12 +32,18 @@ const routes: Routes = [
   { path: 'store-providers-profile/:id/:pid', component: StoreSupplierProfileComponent},
   { path: 'product-view/:id/:pid/:sid', component: ProductViewComponent},
   { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},/*/:id/:search*/
+  { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},
+  { path: 'supplier/view-client/:id/:cid', component: SupplierViewClientComponent},
+  { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},
   { path: 'supplier/view-client/:id/:cid', component: SupplierViewClientComponent},
   { path: '', redirectTo: '/', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ]
 })
 export class AppRoutingModule { }

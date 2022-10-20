@@ -23,6 +23,7 @@ export class ProductsSearchComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.searchTerm = this.route.snapshot.paramMap.get("search");
     this.getAllProducts();

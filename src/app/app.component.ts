@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'urprovider-webapp';
   options = [
     { path: `/supplier-home/${this.id}`, title: 'Home'},
-    { path: '', title: 'Plans'},
+    { path: `/supplier-plan/${this.id}`, title: 'Plans'},
     { path: '', title: 'Notifications'},
     { path: `/supplier-inventory/${this.id}`, title: 'Inventory'},
     { path: `/supplier-profile/${this.id}`, title: 'Profile'}
