@@ -48,7 +48,7 @@
       "phone": "93132881233",
       "password": "diego.100",
       "id": 1,
-      "likes": 1
+      "likes": 2
     },
     {
       "supplierName": "Good Items Corp",
@@ -63,7 +63,7 @@
       "phone": "976067993",
       "password": "kamptec1",
       "id": 2,
-      "likes": 2
+      "likes": 4
     },
     {
       "id": 3,
@@ -168,7 +168,7 @@
       "description": "\nWe offer sale of canned food, such as tuna, beans, with the best deals and at the best prices",
       "phone": "985462878",
       "password": "123456789",
-      "likes": 14
+      "likes": 16
     },
     {
       "id": 10,
@@ -271,11 +271,10 @@
       "name": "Pepsi soda",
       "category": "Food and Beverage",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMMkFj60A46ha_4xoo84m8REuXM-Cq_vk-A&usqp=CAU",
-      "available": true,
+      "available": false,
       "description": "sugary drink and cola (500 ml)",
-      "id": 10,
-      "numberOfSales": 50,
-      "supplierId": 1
+      "supplierId": 1,
+      "id": 10
     },
     {
       "name": "Atun Campomar",

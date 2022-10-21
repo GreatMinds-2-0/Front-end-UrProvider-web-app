@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  profile = 'store';
+  profile = 'supplier';
   id = 1;
   title = 'urprovider-webapp';
   options = [
@@ -24,4 +24,9 @@ export class AppComponent {
     { path: '', title: 'Notifications'},
     { path: `/store-profile/${this.id}`, title: 'Profile'}
   ]
+
+  changeUser() {
+    if(this.profile == 'supplier') this.profile = 'store';
+    else this.profile = 'supplier';
+  }
 }

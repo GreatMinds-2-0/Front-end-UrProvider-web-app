@@ -1,7 +1,12 @@
 <mat-card class="homecard">
   <mat-card-content>
-    <h1>Hello {{ supplierData.name }} {{ supplierData.lastName }}</h1>
-    <p>We are happy to continue working with you <b>{{ supplierData.supplierName }}</b></p>
+    <div class="logo">
+      <img class="img-supplier" src="{{supplierData.image}}" alt="">
+    </div>
+    <div class="menu">
+      <h1>Hello {{supplierData.name}} {{supplierData.lastName}}</h1>
+      <p>We are happy to continue working with <b>{{supplierData.supplierName}}</b></p>
+    </div>
   </mat-card-content>
 </mat-card>
 

@@ -12,8 +12,14 @@
 <div class="ng-start-inserted">
   <div class="mt-5">
     <mat-card class="product-card">
-      <mat-card-title>Provider:</mat-card-title>
+      <mat-card-title>Provider: {{ supplierData.supplierName }}</mat-card-title>
       <img mat-card-image class="img-supplier" src="{{supplierData.image}}">
+      <p>Person in charge: {{supplierData.name+''+supplierData.lastName}}</p>
+      <p>Category: {{supplierData.category}}</p>
+      <p>Address: {{supplierData.address}}</p>
+      <p>Email: {{supplierData.email}}</p>
+      <p>Phone: {{supplierData.phone}}</p>
+      <p>RUC: {{supplierData.ruc}}</p>
     </mat-card>
 
   </div>
