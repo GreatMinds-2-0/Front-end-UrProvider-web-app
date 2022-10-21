@@ -164,7 +164,7 @@
       "description": "We offer sale of candies and canned food at the best prices",
       "phone": "985642135",
       "password": "123456789",
-      "likes": 13
+      "likes": 15
     },
     {
       "id": 9,
@@ -179,7 +179,7 @@
       "description": "\nWe offer sale of canned food, such as tuna, beans, with the best deals and at the best prices",
       "phone": "985462878",
       "password": "123456789",
-      "likes": 16
+      "likes": 17
     },
     {
       "id": 10,
@@ -194,7 +194,7 @@
       "description": "We offer sale of beans, cereals, soft drinks, dairy products, at excellent prices",
       "phone": "939356287",
       "password": "123456789",
-      "likes": 12
+      "likes": 14
     }
   ],
   "products": [
