@@ -38,6 +38,7 @@ export class SupplierHomeComponent implements OnInit {
   getAllStores() {
     this.storesService.getAll().subscribe((response:any) => {
       this.stores = response;
+      this.stores = this.stores.slice(0,3);
     })
   }
 

@@ -138,7 +138,7 @@
       "description": "sale of groceries and sweets",
       "phone": "987954623",
       "password": "123456789",
-      "likes": 7
+      "likes": 12
     },
     {
       "id": 8,
@@ -153,7 +153,7 @@
       "description": "We offer sale of candies and canned food at the best prices",
       "phone": "985642135",
       "password": "123456789",
-      "likes": 8
+      "likes": 14
     },
     {
       "id": 9,
@@ -168,7 +168,7 @@
       "description": "\nWe offer sale of canned food, such as tuna, beans, with the best deals and at the best prices",
       "phone": "985462878",
       "password": "123456789",
-      "likes": 16
+      "likes": 31
     },
     {
       "id": 10,

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Supplier} from "../../../supplier/model/supplier";
 import {SuppliersService} from "../../../supplier/services/suppliers.service";
 import {ActivatedRoute} from "@angular/router";
+import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
 
 @Component({
   selector: 'app-store-supplier-profile',
@@ -66,7 +67,7 @@ export class StoreSupplierProfileComponent implements OnInit {
   }
   updateLikes(){
 
-    this.supplierData.likes=this.supplierData.likes+1;
+    this.supplierData.likes= Number(this.supplierData.likes) + 1;
     this.suppliersService.update(this.supplierData.id,this.supplierData).subscribe();
   }
   selectStar(value: number): void{

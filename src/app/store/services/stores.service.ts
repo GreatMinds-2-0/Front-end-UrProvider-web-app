@@ -10,6 +10,6 @@ export class StoresService extends TemplateService<Store>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:3000/api/v1/stores';
+    this.basePath = 'https://mockend.com/Ronald-Delgado-Del-Castillo/urprovider/stores';
   }
 }
