@@ -21,10 +21,10 @@ export class SuppliersSearchComponent implements OnInit {
 
   ngOnInit(): void {
     this.id = Number(this.route.snapshot.paramMap.get("id"));
-    this.getAllProducts();
+    this.getAllSupplier();
   }
 
-  getAllProducts() {
+  getAllSupplier() {
     this.suppliersService.getAll().subscribe((response:any)=>{
       this.dataSuppliers.data= response;
     })

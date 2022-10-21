@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
-import {catchError, Observable, retry, throwError} from "rxjs";
+import {BehaviorSubject, catchError, Observable, retry, throwError} from "rxjs";
 
+
+const initUser:Number=1;
 @Injectable({
   providedIn: 'root'
 })
 export class TemplateService<T> {
 
+  private user$= new BehaviorSubject(initUser);
   basePath = 'http://localhost:3000/api/v1/resources';
 
   httpOptions = {
@@ -16,6 +19,13 @@ export class TemplateService<T> {
   };
 
   constructor(private http: HttpClient) { }
+
+  getUserId$():Observable<Number>{
+    return this.user$.asObservable();
+  }
+  setUserId(userid:Number){
+    this.user$.next(userid)
+  }
 
   handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
@@ -60,4 +70,5 @@ export class TemplateService<T> {
       JSON.stringify(item), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
+
 }

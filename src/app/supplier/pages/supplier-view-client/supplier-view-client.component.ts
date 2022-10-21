@@ -20,7 +20,7 @@ export class SupplierViewClientComponent implements OnInit {
 
   ngOnInit(): void {
     this.cid = Number(this.route.snapshot.paramMap.get("cid"));
-    this.id = Number(this.route.snapshot.paramMap.get("id"));
+    this.id = Number(this.route.parent?.snapshot.paramMap.get("id"));
     this.getStoreData();
   }
 

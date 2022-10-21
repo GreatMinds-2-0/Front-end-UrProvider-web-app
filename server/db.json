@@ -81,9 +81,8 @@
       "likes": 3
     },
     {
-      "id": 4,
       "supplierName": "Distribuidora Dislac",
-      "name": "Andres",
+      "name": "Aaron",
       "lastName": "Alfaro Mendoza",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe9OKbHEeiRjlL1okA38j8S7jD02HbZL2CaQ&usqp=CAU",
       "email": "dislac_25@gmail.com",
@@ -93,7 +92,7 @@
       "description": "sale of groceries and products in general",
       "phone": "989756214",
       "password": "123456789",
-      "likes": 4
+      "id": 4
     },
     {
       "id": 5,

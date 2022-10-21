@@ -44,6 +44,9 @@ import {
   PaymentMethodDialog,
   SupplierPlanComponent
 } from './supplier/pages/supplier-plan/supplier-plan.component';
+import {MatSelectModule} from "@angular/material/select";
+import { ToolbarViewComponent } from './toolbar/pages/toolbar-view/toolbar-view.component';
+import { SupplierComponent } from './view/pages/supplier/supplier.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,7 +72,9 @@ import {
     SupplierPlanComponent,
     SupplierViewClientComponent,
 
-    PaymentMethodDialog
+    PaymentMethodDialog,
+      ToolbarViewComponent,
+      SupplierComponent
   ],
   imports: [
     BrowserModule,
@@ -92,7 +97,8 @@ import {
     MatSlideToggleModule,
     FormsModule,
     MatSlideToggleModule,
-    MatDialogModule
+    MatDialogModule,
+    MatSelectModule
 
   ],
   providers: [SuppliersService, StoresService, ProductsService],

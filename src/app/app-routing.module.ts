@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import {RouterModule, Routes} from "@angular/router";
+import {ExtraOptions, RouterModule, Routes} from "@angular/router";
 import {SupplierHomeComponent} from "./supplier/pages/supplier-home/supplier-home.component";
 import {InventoryComponent} from "./inventory/pages/inventory/inventory.component";
 import {SupplierProfileComponent} from "./supplier/pages/supplier-profile/supplier-profile.component";
@@ -15,30 +15,44 @@ import {SupplierViewClientComponent} from "./supplier/pages/supplier-view-client
 import {ProductViewComponent} from "./inventory/pages/product-view/product-view.component";
 import {PaymentMethodDialog, SupplierPlanComponent} from "./supplier/pages/supplier-plan/supplier-plan.component";
 import {MAT_DIALOG_DEFAULT_OPTIONS} from "@angular/material/dialog";
+import {SignInComponent} from "./security/pages/sign-in/sign-in.component";
+import {SupplierComponent} from "./view/pages/supplier/supplier.component";
 
 const routes: Routes = [
-  { path: 'supplier-home/:id', component: SupplierHomeComponent },
-  {path:'supplier-plan/:id',component:SupplierPlanComponent},
-  { path: 'supplier-inventory/:id', component: InventoryComponent },
-  { path: 'supplier-profile/:id', component: SupplierProfileComponent},
-  { path: 'supplier-profile-edit/:id', component: SupplierEditProfileComponent},
-  { path: 'supplier/edit-product/:id/:pid', component: EditProductComponent},
-  { path: 'supplier/add-product/:id', component: AddProductComponent},
-  { path: 'supplier-profile/:id', component: SupplierProfileComponent},
-  { path: 'supplier-profile-edit/:id', component: SupplierEditProfileComponent},
-  { path: 'store-profile/:id', component: StoreProfileComponent},
-  { path: 'store-edit-profile/:id', component: StoreEditProfileComponent},
-  { path: 'store-home/:id', component: StoreHomeComponent},
-  { path: 'store-providers-profile/:id/:pid', component: StoreSupplierProfileComponent},
-  { path: 'product-view/:id/:pid/:sid', component: ProductViewComponent},
-  { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},/*/:id/:search*/
-  { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},
-  { path: 'supplier/view-client/:id/:cid', component: SupplierViewClientComponent},
-  { path: '', redirectTo: '/', pathMatch: 'full' },
-];
+  { path: 'sign-in', component: SignInComponent },
+  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
+  { path: 'supplier/:id', component: SupplierComponent,
+    children:[
+      { path: 'supplier-home', component: SupplierHomeComponent},
+      { path: 'supplier-plan',component:SupplierPlanComponent},
+      { path: 'supplier-inventory', component: InventoryComponent},
+      { path: 'supplier/edit-product/:pid', component: EditProductComponent,outlet:'supplier'},
+      { path: 'supplier/add-product/:pid', component: AddProductComponent,outlet:'supplier'},
+      { path: 'supplier-profile', component: SupplierProfileComponent},
+      { path: 'supplier-profile-edit', component: SupplierEditProfileComponent},
+      { path: 'supplier/view-client/:cid', component: SupplierViewClientComponent},
+    ]
+  },
 
+  { path: 'store-profile/:id', component: StoreProfileComponent,
+    children:[
+      { path: 'store-edit-profile/:id', component: StoreEditProfileComponent},
+      { path: 'store-home/:id', component: StoreHomeComponent},
+      { path: 'store-providers-profile/:id/:pid', component: StoreSupplierProfileComponent},
+      { path: 'product-view/:id/:pid/:sid', component: ProductViewComponent},
+      { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},/*/:id/:search*/
+      { path: 'store-products-list/:id/:search', component: ProductsSearchComponent},
+
+      ]
+  },
+
+
+];
+export const routingConfiguration: ExtraOptions = {
+  paramsInheritanceStrategy: 'always'
+}
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,routingConfiguration)],
   exports: [RouterModule],
   providers: [
     {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}

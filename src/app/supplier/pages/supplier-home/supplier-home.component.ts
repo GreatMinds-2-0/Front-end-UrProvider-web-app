@@ -25,7 +25,7 @@ export class SupplierHomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.id = Number(this.route.snapshot.paramMap.get("id"));
+    this.id = Number(this.route.parent?.snapshot.paramMap.get("id"));
     this.getSupplierById(Number(this.id));
     this.getAllStores();
   }
@@ -42,6 +42,6 @@ export class SupplierHomeComponent implements OnInit {
   }
 
   redirectClient(id: number) {
-    this.router.navigate([`./supplier/view-client/${this.id}/${id}`]);
+    this.router.navigate([`../supplier/view-client/`,1]);
   }
 }
