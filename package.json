@@ -8,9 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "watch": "ng build --watch --configuration development",
-    "lite": "lite-server",
-    "postinstall": "ng build --prod"
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
