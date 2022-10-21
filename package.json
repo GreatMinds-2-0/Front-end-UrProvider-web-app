@@ -6,9 +6,8 @@
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +45,6 @@
   },
   "engines": {
     "node": "16.17.1",
-    "npm": "6.4.1"
+    "npm": "6.14.5"
   }
 }
