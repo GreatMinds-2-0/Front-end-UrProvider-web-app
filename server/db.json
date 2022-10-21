@@ -63,7 +63,7 @@
       "phone": "976067993",
       "password": "kamptec1",
       "id": 2,
-      "likes": 4
+      "likes": 5
     },
     {
       "id": 3,
@@ -271,7 +271,7 @@
       "name": "Pepsi soda",
       "category": "Food and Beverage",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMMkFj60A46ha_4xoo84m8REuXM-Cq_vk-A&usqp=CAU",
-      "available": false,
+      "available": true,
       "description": "sugary drink and cola (500 ml)",
       "supplierId": 1,
       "id": 10
