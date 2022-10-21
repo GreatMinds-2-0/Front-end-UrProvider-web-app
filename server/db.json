@@ -32,6 +32,17 @@
       "phone": "974633180",
       "address": "Avenue El Golfo 109",
       "image": "https://lh3.googleusercontent.com/p/AF1QipNt9I29nejQIqrYNJSNNg3M5Oo6Tqih1uQreXH1=w1080-h608-p-k-no-v0"
+    },
+    {
+      "storeName": "SportNation",
+      "name": "Dean",
+      "lastName": "Prieto",
+      "email": "d_nationp@gmail.com",
+      "address": "Avenue Encalada 792",
+      "phone": "975662301",
+      "password": "nation.prieto",
+      "image": "https://www.caciquecc.com/fotosalmacenes/macro_almacen-adidas-1614962660.png",
+      "id": 4
     }
   ],
   "suppliers": [
@@ -138,7 +149,7 @@
       "description": "sale of groceries and sweets",
       "phone": "987954623",
       "password": "123456789",
-      "likes": 7
+      "likes": 9
     },
     {
       "id": 8,
@@ -153,7 +164,7 @@
       "description": "We offer sale of candies and canned food at the best prices",
       "phone": "985642135",
       "password": "123456789",
-      "likes": 8
+      "likes": 13
     },
     {
       "id": 9,
@@ -183,7 +194,7 @@
       "description": "We offer sale of beans, cereals, soft drinks, dairy products, at excellent prices",
       "phone": "939356287",
       "password": "123456789",
-      "likes": 11
+      "likes": 12
     }
   ],
   "products": [

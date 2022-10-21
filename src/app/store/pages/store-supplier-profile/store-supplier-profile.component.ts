@@ -66,7 +66,7 @@ export class StoreSupplierProfileComponent implements OnInit {
   }
   updateLikes(){
 
-    this.supplierData.likes=this.supplierData.likes+1;
+    this.supplierData.likes=Number(this.supplierData.likes)+1;
     this.suppliersService.update(this.supplierData.id,this.supplierData).subscribe();
   }
   selectStar(value: number): void{
