@@ -11,6 +11,6 @@ export class ProductsService extends TemplateService<Product>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:8080/api/v1/products';
+    this.basePath = '/api/v1/products';
   }
 }

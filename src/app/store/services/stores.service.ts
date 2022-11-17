@@ -10,6 +10,6 @@ export class StoresService extends TemplateService<Store>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:8080/api/v1/stores';
+    this.basePath = '/api/v1/stores';
   }
 }
