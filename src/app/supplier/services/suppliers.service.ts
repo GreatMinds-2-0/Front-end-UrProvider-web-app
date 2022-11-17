@@ -10,6 +10,6 @@ export class SuppliersService extends TemplateService<Supplier>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath = 'https://mockend.com/Ronald-Delgado-Del-Castillo/urprovider/suppliers';
+    this.basePath = 'http://localhost:8080/api/v1/suppliers';
   }
 }

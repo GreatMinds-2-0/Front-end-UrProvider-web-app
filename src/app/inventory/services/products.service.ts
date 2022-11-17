@@ -11,6 +11,6 @@ export class ProductsService extends TemplateService<Product>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath = 'https://mockend.com/Ronald-Delgado-Del-Castillo/urprovider/products';
+    this.basePath = 'http://localhost:8080/api/v1/products';
   }
 }
