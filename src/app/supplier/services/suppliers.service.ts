@@ -23,7 +23,13 @@ export class SuppliersService extends TemplateService<Supplier>{
     return this.http.delete(`${this.basePath}/${id}/products/${pid}`, this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
-  createProductBySupplier(){
-
+  createProductBySupplier(id:any,item: any): Observable<Product> {
+    return this.http.post<Product>(
+      `${this.basePath}/${id}/products`,
+      JSON.stringify(item),
+      this.httpOptions)
+      .pipe(
+        retry(2),
+        catchError(this.handleError));
   }
 }
