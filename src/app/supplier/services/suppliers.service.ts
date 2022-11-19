@@ -32,4 +32,8 @@ export class SuppliersService extends TemplateService<Supplier>{
         retry(2),
         catchError(this.handleError));
   }
+  getProductsBySupplier(id:any){
+    return this.http.get(`${this.basePath}/${id}/products`, this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
 }

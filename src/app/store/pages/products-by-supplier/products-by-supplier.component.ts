@@ -3,6 +3,7 @@ import {MatTableDataSource} from "@angular/material/table";
 import {Product} from "../../../inventory/model/product";
 import {ProductsService} from "../../../inventory/services/products.service";
 import {ActivatedRoute} from "@angular/router";
+import {SuppliersService} from "../../../supplier/services/suppliers.service";
 
 @Component({
   selector: 'app-products-by-supplier',
@@ -11,13 +12,13 @@ import {ActivatedRoute} from "@angular/router";
 })
 export class ProductsBySupplierComponent implements OnInit {
 
-  searchTerm: any;
+  searchTerm: any="";
   id: any;
 
 
   dataSource = new MatTableDataSource<Product>;
 
-  constructor(private productsService: ProductsService,
+  constructor(private productsService: ProductsService,private supplierService: SuppliersService,
               private route: ActivatedRoute) {
 
   }
@@ -26,16 +27,15 @@ export class ProductsBySupplierComponent implements OnInit {
     this.id = Number(this.route.snapshot.paramMap.get("pid"));
     this.searchTerm = this.route.snapshot.paramMap.get("search");
     this.getProductsBySupplierId();
-    this.applyFilterInit(  this.searchTerm );
+
   }
   getTotalProducts(){
     return this.dataSource.data.length;
   }
 
   getProductsBySupplierId(){
-    this.productsService.getAll().subscribe((response:any) => {
+    this.supplierService.getProductsBySupplier(this.id).subscribe((response:any) => {
       this.dataSource.data = response;
-      this.dataSource.data = this.dataSource.data.filter(x => x.supplierId == this.id)
     });
   }
 

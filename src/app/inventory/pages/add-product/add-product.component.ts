@@ -3,6 +3,7 @@ import {ProductsService} from "../../services/products.service";
 import {ActivatedRoute} from "@angular/router";
 import {Product} from "../../model/product";
 import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
+import {SuppliersService} from "../../../supplier/services/suppliers.service";
 
 @Component({
   selector: 'app-add-product',
@@ -15,7 +16,7 @@ export class AddProductComponent implements OnInit {
   productsList: Array<Product>;
   productId?: number;
 
-  constructor(private productsService: ProductsService, private route: ActivatedRoute) {
+  constructor(private productsService: ProductsService,private supplierService: SuppliersService, private route: ActivatedRoute) {
     this.id = Number(this.route.snapshot.paramMap.get("id"));
     this.newProduct = {} as Product;
     this.productsList = [];
@@ -39,10 +40,8 @@ export class AddProductComponent implements OnInit {
       image: this.newProduct.image,
       available: this.newProduct.available,
       description: this.newProduct.description,
-      supplierId: this.id,
-      id: this.productId
     }
 
-    this.productsService.create(addP).subscribe();
+    this.supplierService.createProductBySupplier(this.id,addP).subscribe();
   }
 }
