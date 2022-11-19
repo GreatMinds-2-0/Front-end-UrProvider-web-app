@@ -14,7 +14,7 @@ export class EditProductComponent implements OnInit {
   pid?: any;
   productData: Product;
 
-  constructor(private productsService: ProductsService, private route: ActivatedRoute) {
+  constructor(private productsService: ProductsService,private supplierService:SuppliersService, private route: ActivatedRoute) {
     this.productData = {} as Product;
   }
 
@@ -40,6 +40,6 @@ export class EditProductComponent implements OnInit {
       supplierId: this.id
     }
 
-    this.productsService.update(this.productData.id, updateP).subscribe();
+    this.supplierService.updateProductBySupplier(this.id,this.pid, updateP).subscribe();
   }
 }

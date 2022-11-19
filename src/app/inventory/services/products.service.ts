@@ -13,4 +13,9 @@ export class ProductsService extends TemplateService<Product>{
     super(http);
     this.basePath = 'http://localhost:8080/api/v1/products';
   }
+  override update(id: any, item: any): Observable<Product> {
+    return this.http.put<Product>(`${this.basePath}/${id}`,
+      JSON.stringify(item), this.httpOptions)
+      .pipe(retry(2), catchError(this.handleError));
+  }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ProductsService} from "../../services/products.service";
 import {ActivatedRoute} from "@angular/router";
 import {Product} from "../../model/product";
+import {SuppliersService} from "../../../supplier/services/suppliers.service";
 
 @Component({
   selector: 'app-inventory',
@@ -13,6 +14,7 @@ export class InventoryComponent implements OnInit {
   products: Array<Product>;
 
   constructor(private productsService: ProductsService,
+              private supplierService: SuppliersService,
               private route: ActivatedRoute) {
     this.products = [];
   }
@@ -30,7 +32,7 @@ export class InventoryComponent implements OnInit {
   }
 
   deleteProduct(id: number) {
-    this.productsService.delete(id).subscribe(() => {
+    this.supplierService.deleteProductBySupplier(this.id,id).subscribe(() => {
       this.products = this.products
         .filter((o: Product) => { return o.id !== id ? o : false; });
     });
