@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseURL:'http://localhost:8080'
+  apiBaseURL:'https://ur-provider-api.herokuapp.com/'
 };
