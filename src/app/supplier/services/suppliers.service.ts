@@ -12,7 +12,7 @@ export class SuppliersService extends TemplateService<Supplier>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:8080/api/v1/suppliers';
+    this.basePath = 'https://ur-provider-api.herokuapp.com/api/v1/suppliers';
   }
   updateProductBySupplier(id: any,pid:any, item: any): Observable<Product> {
     return this.http.put<Product>(`${this.basePath}/${id}/products/${pid}`,

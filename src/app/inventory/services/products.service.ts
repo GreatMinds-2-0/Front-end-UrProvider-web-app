@@ -11,7 +11,7 @@ export class ProductsService extends TemplateService<Product>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.basePath = 'http://localhost:8080/api/v1/products';
+    this.basePath = 'https://ur-provider-api.herokuapp.com/api/v1/products';
   }
   override update(id: any, item: any): Observable<Product> {
     return this.http.put<Product>(`${this.basePath}/${id}`,
